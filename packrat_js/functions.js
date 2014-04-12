@@ -5,14 +5,39 @@
 //var words = require('./words.js');
 
 var myDataRef = new Firebase('https://vivid-fire-2947.firebaseio.com/');
+var users = myDataRef.child('Users');
 
 function genUser(name, picture){
     var user = new Object();
     user.name = name;
     user.picture = picture;
     user.password = getWord();
-    user.pw_chars_cracked = 0;
+    user.pw_remaining = user.password;
+    user.pw_cracked = "";
     user.key_cracked = false;
-    myDataRef.push(user);
+    users.push(user);
     document.write(user);
+}
+
+function getPwChar(id){
+    var targetRef = users.child(id);
+    targetRef.once('value', function(snapshot){
+	var target = snapshot.val();
+	var i = getRandomInt(0, target.pw_remaining.length);
+	target.pw_cracked = target.pw_cracked + target.pw_remaining.charAt(i);
+	target.pw_remaining = target.pw_remaining.substring(0, i) + target.pw_remaining.substring(i+1);
+	for(key in target){
+	    document.write(key + ": " + target[key] + "|");
+	    document.write("   ");
+	}
+	targetRef.set(target);
+    });
+}
+
+function getCrackedChars(id){
+    var targetRef = users.child(id);
+    targetRef.on('value', function(snapshot){
+	var target = snapshot.val();
+	return target.pw_cracked;
+    });
 }
