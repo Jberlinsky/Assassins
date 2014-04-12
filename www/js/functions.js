@@ -143,3 +143,15 @@ function guessPw(target_id, guess){
     }
   });
 }
+
+function self_kill(target_id){
+    users.once('value', function(snapshot)){
+	usersObj = snapshot.val();
+	for(key in usersObj){
+	    if(usersObj[key].target == target_id){
+		killUser(target_id, key);
+		return undefined;
+	    }
+	}
+    });
+}
