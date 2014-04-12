@@ -86,6 +86,13 @@ function setTargets(){
       holder = key;
     }
     userObj[first].target = key;
+
+    targetRef = users.child(target_id);
+    targetRef.once('value', function(snapshot) {
+      var targetObj = snapshot.val();
+      targetObj.killer = userObj.id;
+      targetRef.set(targetObj);
+    });
     users.set(userObj);
   });
 }
