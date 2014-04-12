@@ -3,48 +3,7 @@
         "installed": [],
         "uninstalled": []
     },
-    "config_munge": {
-        "files": {
-            "res/xml/config.xml": {
-                "parents": {
-                    "/widget": [
-                        {
-                            "xml": "<feature name=\"ScanditSDK\"><param name=\"android-package\" value=\"com.mirasense.scanditsdk.plugin.ScanditSDK\" /></feature>",
-                            "count": 1
-                        }
-                    ]
-                }
-            },
-            "AndroidManifest.xml": {
-                "parents": {
-                    "/manifest": [
-                        {
-                            "xml": "<uses-permission android:name=\"android.permission.CAMERA\" />",
-                            "count": 1
-                        },
-                        {
-                            "xml": "<uses-permission android:name=\"android.permission.VIBRATE\" />",
-                            "count": 1
-                        },
-                        {
-                            "xml": "<uses-permission android:name=\"android.permission.INTERNET\" />",
-                            "count": 1
-                        }
-                    ],
-                    "/manifest/application": [
-                        {
-                            "xml": "<activity android:name=\"com.mirasense.scanditsdk.plugin.ScanditSDKActivity\" />",
-                            "count": 1
-                        }
-                    ]
-                }
-            }
-        }
-    },
-    "installed_plugins": {
-        "com.mirasense.scanditsdk.plugin": {
-            "PACKAGE_NAME": "com.ionicframework.starter"
-        }
-    },
+    "config_munge": {},
+    "installed_plugins": {},
     "dependent_plugins": {}
 }

@@ -18,6 +18,7 @@ function genUser(fbid){
       user.fbid = fbid;
       user.password = getWord();
       user.pw_remaining = user.password;
+      user.pw_compormised = false;
       user.pw_cracked = "";
       user.key_cracked = false;
       user.target = 'empty_target';
@@ -103,20 +104,42 @@ function updateLocation(user_id, geolocation_obj) {
   });
 }
 
-function findUserInRange(user_id, successCallback) {
-  // TODO: Find user in decrypt range. If multiple, return only one.
-  // Call successCallback(found_user);
+function targetInRange(geolocation_obj, target) {
+  // TODO
+  // See above for reference of where this shit is stored in each object
+}
+
+function targetCanBeDecrypted(target) {
+  return (target.key_cracked == false);
+}
+
+function findTargetInRange(user_id, target_id, our_location, successCallback) {
+  var targetRef = users.child(target_id);
+  targetRef.once('value', function(snapshot) {
+    var target = snapshot.val();
+    if (targetInRange(our_location, target) && targetCanBeDecrypted(target)) {
+      successCallback(target)
+    }
+  });
+}
+
+function enableKillBetween(user_id, target_id) {
+  var targetRef = users.child(target_id);
+  targetRef.once('value', function(snapshot) {
+    var target = snapshot.val();
+    target.pw_compromised = true;
+  });
 }
 
 function guessPw(target_id, guess){
-    var targetRef = users.child(user_id);
-    targetRef.once('value', function(snapshot){
-	var target = snapshot.val();
-	if(guess === target.password){
-	    target.pw_compromised = true;
-	    return true;
-	}else{
-	    return false;
-	}
-    });
+  var targetRef = users.child(target_id);
+  targetRef.once('value', function(snapshot){
+    var target = snapshot.val();
+    if(guess === target.password){
+      target.pw_compromised = true;
+      return true;
+    }else{
+      return false;
+    }
+  });
 }

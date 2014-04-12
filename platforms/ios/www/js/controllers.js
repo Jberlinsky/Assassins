@@ -25,6 +25,7 @@ angular.module('assassin.controllers', [])
 
 .controller('TargetCtrl', function($scope, $firebase, $rootScope) {
   decryptOneCharacter = function() {
+    // TODO UI element of this.
     getPwChar($rootScope.auth.user.id);
   };
 
@@ -32,45 +33,30 @@ angular.module('assassin.controllers', [])
     navigator.geolocation.watchPosition(function(position) {
       $scope.target = $firebase($rootScope.assassin.child('target'));
       $scope.coords = position.coords;
-      console.log($scope.target);
-      console.log(position);
-    $scope.target_pw_cracked = $scope.target.pw_cracked;
-    $scope.target_pw_remaining = $scope.target.pw_remaining;
+      $scope.target_pw_cracked = $scope.target.pw_cracked;
+      $scope.target_pw_remaining = $scope.target.pw_remaining;
+      $scope.i_am_killable = $scope.target.pw_compromised;
       updateLocation($rootScope.auth.user.id, position);
       if (window.app_state === undefined) { window.app_state = 'seeking'; }
       if (window.app_state == 'seeking') {
         // Look for nearby users to decrypt
-        //debugger;
-        findUserInRange($rootScope.auth.user.id, function(target) {
-          if (target.id == $scope.target.id) {
-            // Start decrypting
-            window.app_state = 'decrypting';
-            var N_SEC = 2;
-            window.setTimeout(decryptOneCharacter, N_SEC * 1000);
-          }
+        findTargetInRange($rootScope.auth.user.id, $scope.target.id, position.coords, function(target) {
+          // Start decrypting
+          window.app_state = 'decrypting';
+          var N_SEC = 2;
+          window.setTimeout(decryptOneCharacter, N_SEC * 1000);
         });
       } else if (window.app_state == 'decrypting') {
         // Every N seconds, decrypt one character
         if ($scope.target_pw_remaining == "") {
           window.state = 'broken';
         }
+      } else if ($scope.i_am_killable) {
+        // Display kill button
+        // When the button is clicked, execute kill_user on THAT PHONE's user as the target, and OUR PHONE's user as the user_id
       } else if (window.app_state == 'broken') {
         // Go in for the kill
-        cordova.exec(function(resultArray) {
-          alert('Scanned ' + resultArray[0] + '; code: ' + resultArray[1]);
-          var scanned_result = resultArray[1];
-          if (scanned_result == $scope.target.id) {
-            // We just killed our target
-            killUser($scope.target.id, $rootScope.auth.user.id);
-            alert("You have killed " + $scope.target.name + "!");
-          }
-        }, function(error) {
-          alert('Failed: ' + error);
-        }, "ScanditSDK", "scan", ["HggvAsIzEeOGJ8PCmN4hrqbSYHs/MOiC7BROdp1pui", {
-          'beep': true,
-          '1DScanning': true,
-          '2DScanning': true
-        }]);
+        enableKillBetween($rootScope.auth.user.id, $scope.target.id);
       }
     });
   };
