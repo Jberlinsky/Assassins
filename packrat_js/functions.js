@@ -14,6 +14,7 @@ function genUser(fbid){
   user.pw_remaining = user.password;
   user.pw_cracked = "";
   user.key_cracked = false;
+  user.target = 'empty_target';
   users.push(user);
   console.log(user);
 }
@@ -41,4 +42,8 @@ function getCrackedChars(id){
     var target = snapshot.val();
     return target.pw_cracked;
   });
+}
+
+function killUserById(id) {
+  // target.cracked = true
 }
