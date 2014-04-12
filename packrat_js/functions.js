@@ -15,7 +15,7 @@ function genUser(fbid){
   user.pw_cracked = "";
   user.key_cracked = false;
   users.push(user);
-  document.write(user);
+  console.log(user);
 }
 
 function getPwChar(id){
@@ -26,8 +26,8 @@ function getPwChar(id){
     target.pw_cracked = target.pw_cracked + target.pw_remaining.charAt(i);
     target.pw_remaining = target.pw_remaining.substring(0, i) + target.pw_remaining.substring(i+1);
     for(key in target){
-      document.write(key + ": " + target[key] + "|");
-      document.write("   ");
+      console.log(key + ": " + target[key] + "|");
+      console.log("   ");
     }
     targetRef.set(target);
   });
