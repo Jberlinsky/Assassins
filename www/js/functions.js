@@ -85,6 +85,13 @@ function setTargets(){
       holder = key;
     }
     userObj[first].target = key;
+
+    targetRef = users.child(target_id);
+    targetRef.once('value', function(snapshot) {
+      var targetObj = snapshot.val();
+      targetObj.killer = userObj.id;
+      targetRef.set(targetObj);
+    });
     users.set(userObj);
   });
 }
@@ -149,6 +156,18 @@ function guessPw(target_id, guess){
       return true;
     }else{
       return false;
+    }
+  });
+}
+
+function self_kill(target_id){
+  users.once('value', function(snapshot)){
+    usersObj = snapshot.val();
+    for(key in usersObj){
+      if(usersObj[key].target == target_id){
+        killUser(target_id, key);
+        return undefined;
+      }
     }
   });
 }
