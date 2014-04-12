@@ -86,6 +86,13 @@ function setTargets(){
       holder = key;
     }
     userObj[first].target = key;
+
+    targetRef = users.child(target_id);
+    targetRef.once('value', function(snapshot) {
+      var targetObj = snapshot.val();
+      targetObj.killer = userObj.id;
+      targetRef.set(targetObj);
+    });
     users.set(userObj);
   });
 }
@@ -105,8 +112,18 @@ function updateLocation(user_id, geolocation_obj) {
 }
 
 function targetInRange(geolocation_obj, target) {
-  // TODO
-  // See above for reference of where this shit is stored in each object
+  var error_tolerance = .05;
+  var lat_diff = Math.abs(geolocation_obj.coords.latitude  - target.geo_lat);
+  var lng_diff = Math.abs(geolocation_obj.coords.longitude - target.geo_lng);
+  
+  if (lat_diff / geolocation_obj.coords.latitude < error_tolerance) &&
+     (lng_diff / geolocation_obj.coords.latitude < error_tolerance) &&
+     (lat_diff >= geolocation_obj.coords.accuracy) &&
+     (lng_diff >= geolocation_obj.coords.accuracy) {
+      return true;
+     } else {
+      return false;
+     }
 }
 
 function targetCanBeDecrypted(target) {
