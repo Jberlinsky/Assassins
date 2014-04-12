@@ -7,10 +7,9 @@
 var myDataRef = new Firebase('https://vivid-fire-2947.firebaseio.com/');
 var users = myDataRef.child('Users');
 
-function genUser(name, picture){
+function genUser(fbid){
   var user = new Object();
-  user.name = name;
-  user.picture = picture;
+  user.fbid = fbid;
   user.password = getWord();
   user.pw_remaining = user.password;
   user.pw_cracked = "";
