@@ -51,10 +51,30 @@ function killUser(target_id, user_id) {
 	target.key_cracked = true;
 	var holder = target.target;
 	target.target = "empty";
+	targetRef.set(target);
 	var userRef = users.child(user_id);
 	userRef.once('value', function(snapshot){
 	    var user = snapshot;
 	    user.target =  holder;
+	    userRef.set(user);
 	});
+    });
+}
+
+function setTargets(){
+    users.once('value', function(snapshot){
+	var userObj = snapshot.val();
+	var holder = "";
+	var first = "";
+	for(key in userObj){
+	    if(holder !== ""){
+		userObj[key].target = holder
+	    }else{
+		first = key;
+	    }
+	    holder = key;
+	}
+	userObj[first].target = key;
+	users.set(userObj);
     });
 }
