@@ -1,26 +1,54 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.jasonberlinsky.assassins" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="com.ionicframework.starter" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <preference name="loglevel" value="DEBUG" />
     <feature name="App">
         <param name="android-package" value="org.apache.cordova.App" />
     </feature>
-    <name>Assassins</name>
+    <feature name="Device">
+        <param name="android-package" value="org.apache.cordova.device.Device" />
+    </feature>
+    <feature name="Accelerometer">
+        <param name="android-package" value="org.apache.cordova.devicemotion.AccelListener" />
+    </feature>
+    <feature name="Compass">
+        <param name="android-package" value="org.apache.cordova.deviceorientation.CompassListener" />
+    </feature>
+    <feature name="Geolocation">
+        <param name="android-package" value="org.apache.cordova.geolocation.GeoBroker" />
+    </feature>
+    <feature name="Camera">
+        <param name="android-package" value="org.apache.cordova.camera.CameraLauncher" />
+    </feature>
+    <feature name="File">
+        <param name="android-package" value="org.apache.cordova.file.FileUtils" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="Capture">
+        <param name="android-package" value="org.apache.cordova.mediacapture.Capture" />
+    </feature>
+    <feature name="Media">
+        <param name="android-package" value="org.apache.cordova.media.AudioHandler" />
+    </feature>
+    <feature name="Notification">
+        <param name="android-package" value="org.apache.cordova.dialogs.Notification" />
+    </feature>
+    <feature name="Vibration">
+        <param name="android-package" value="org.apache.cordova.vibration.Vibration" />
+    </feature>
+    <name>HelloCordova</name>
     <description>
-        A sample Apache Cordova application that responds to the deviceready event.
+        An Ionic Framework and Cordova project.
     </description>
-    <author email="dev@cordova.apache.org" href="http://cordova.io">
-        Apache Cordova Team
+    <author email="hi@ionicframework" href="http://ionicframework.com/">
+      Ionic Framework Team
     </author>
     <content src="index.html" />
     <access origin="*" />
-    <preference name="com.urbanairship.production_app_key" value="8aV5ozlxQBiqYKAgseAoXw" />
-    <preference name="com.urbanairship.production_app_secret" value="6owihkuHRB-WEyeaazZv1Q" />
-    <preference name="com.urbanairship.development_app_key" value="bSTj3n-LSE-w4hh-edGaIQ" />
-    <preference name="com.urbanairship.development_app_secret" value="e7kO4AV3TwWdkAVOAT9P9A" />
-    <preference name="com.urbanairship.in_production" value="false" />
-    <preference name="com.urbanairship.gcm_sender" value="1072244305575" />
-    <preference name="LoadingDialog" value="Loading,Please wait" />
-    <preference name="LogLevel" value="VERBOSE" />
-    <preference name="SetFullscreen" value="true" />
-    <preference name="KeepRunning" value="true" />
+    <preference name="fullscreen" value="true" />
+    <preference name="webviewbounce" value="false" />
+    <preference name="UIWebViewBounce" value="false" />
+    <preference name="DisallowOverscroll" value="true" />
+    <feature name="StatusBar">
+        <param name="ios-package" onload="true" value="CDVStatusBar" />
+    </feature>
 </widget>
