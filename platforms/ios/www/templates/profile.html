@@ -5,18 +5,38 @@
 	Jane Doe
       </div>
       <div class="item item-body">
-	<img class="full-image" src="http://placehold.it/300x200">
+	<img class="full-image" src="http://graph.facebook.com/{{fbid}}/picture?width=300&height=200">
       </div>
       <div class="item item-text-wrap">
 	<label class="item item-input">
 	  <span clas="input-label">Password:</span>
-	  <input type="text">
+	  <input type="text" value="{{password}}" readonly>
 	</label>
       </div>
       <div class="item item-text-wrap">
-	<img class="full-image" src="http://placehold.it/300x64">
+	<img ng-click="openModal()" class="full-image" src="http://placehold.it/300x64">
       </div>
     </div>
   </ion-content>
+  <script id="modal.html" type="text/ng-template">
+    <div class="modal">
+      <ion-header-bar title="My Modal Title"></ion-header-bar>
+      <ion-content>
+	Steal the key?
+	<div class="row">
+	  <div class="col"> 
+	    <div align="center">
+	      <button style="text-align:center" class="button button-balanced">Yes</button>
+	    </div>
+	  </div>
+	  <div class="col">
+	    <div align="center">
+	      <button style="text-align:center" class="button button-assertive">No</button>
+	    </div>
+	  </div>
+	</div>
+      </ion-content>
+    </div>
+  </script>
 </ion-view>
 
