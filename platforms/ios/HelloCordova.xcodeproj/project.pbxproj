@@ -58,8 +58,13 @@
 		6D22FC6E2F0E43609E3D9F2E /* CDVNotification.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 794096A6F4B34A6399857565 /* CDVNotification.bundle */; };
 		AB4EA814D8C045F980AABC91 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F44BCE693B304A418650E13C /* AudioToolbox.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		728087A81D6343E2966D8532 /* CDVVibration.m in Sources */ = {isa = PBXBuildFile; fileRef = 1486364988E547229529DF03 /* CDVVibration.m */; };
-		C39E82365BF34B1DA70C7608 /* BluetoothLePlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 1390303B79214B1AA7FB16A6 /* BluetoothLePlugin.m */; };
-		41808D7074D54FA1A71C7AE3 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50BD6ABEB36F4F3FA6ADFF35 /* CoreBluetooth.framework */; };
+		2FEE7DB12CB646F3B7712345 /* CDVBarcodeScanner.mm in Resources */ = {isa = PBXBuildFile; fileRef = A68029B387534046A34325B4 /* CDVBarcodeScanner.mm */; settings = {COMPILER_FLAGS = -fno-objc-arc; }; };
+		FAAD38B5BE4E416DA995B683 /* zxing-all-in-one.cpp in Resources */ = {isa = PBXBuildFile; fileRef = 28D2C0B8FBB54DCFBB5AA720 /* zxing-all-in-one.cpp */; };
+		72C0DA637978494CBC046C7F /* scannerOverlay.xib in Resources */ = {isa = PBXBuildFile; fileRef = 47306769CEF344308D2094FE /* scannerOverlay.xib */; };
+		B4D4E29A561D4C30A301DFE2 /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F935E10D05F4A61A39A5792 /* libiconv.dylib */; };
+		E4FC10CBB40A4E8A9EB16C8C /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19C6FE8E91ED449C8A792D9F /* AVFoundation.framework */; };
+		4C084137CFB54EA5BFCC128A /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E50A344913F4C71A25D338C /* CoreVideo.framework */; };
+		8DCEE21CB2CA4FEF8A386326 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E64C7384D07A4612BC97AF2D /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -160,9 +165,14 @@
 		F44BCE693B304A418650E13C /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "AudioToolbox.framework"; path = "System/Library/Frameworks/AudioToolbox.framework"; sourceTree = SDKROOT; fileEncoding = 4; };
 		1486364988E547229529DF03 /* CDVVibration.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "CDVVibration.m"; path = "org.apache.cordova.vibration/CDVVibration.m"; sourceTree = "<group>"; fileEncoding = 4; };
 		D0A1C60DF93E4421807C3C56 /* CDVVibration.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CDVVibration.h"; path = "org.apache.cordova.vibration/CDVVibration.h"; sourceTree = "<group>"; fileEncoding = 4; };
-		1390303B79214B1AA7FB16A6 /* BluetoothLePlugin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "BluetoothLePlugin.m"; path = "com.randdusing.bluetoothle/BluetoothLePlugin.m"; sourceTree = "<group>"; fileEncoding = 4; };
-		8337971D2D724DABACFF590C /* BluetoothLePlugin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "BluetoothLePlugin.h"; path = "com.randdusing.bluetoothle/BluetoothLePlugin.h"; sourceTree = "<group>"; fileEncoding = 4; };
-		50BD6ABEB36F4F3FA6ADFF35 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "CoreBluetooth.framework"; path = "System/Library/Frameworks/CoreBluetooth.framework"; sourceTree = SDKROOT; fileEncoding = 4; };
+		A68029B387534046A34325B4 /* CDVBarcodeScanner.mm */ = {isa = PBXFileReference; lastKnownFileType = unknown; name = "CDVBarcodeScanner.mm"; path = "com.phonegap.plugins.barcodescanner/CDVBarcodeScanner.mm"; sourceTree = "<group>"; fileEncoding = 4; };
+		28D2C0B8FBB54DCFBB5AA720 /* zxing-all-in-one.cpp */ = {isa = PBXFileReference; lastKnownFileType = unknown; name = "zxing-all-in-one.cpp"; path = "com.phonegap.plugins.barcodescanner/zxing-all-in-one.cpp"; sourceTree = "<group>"; fileEncoding = 4; };
+		8AB4FF11D4304D0D87132DB5 /* zxing-all-in-one.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "zxing-all-in-one.h"; path = "com.phonegap.plugins.barcodescanner/zxing-all-in-one.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		47306769CEF344308D2094FE /* scannerOverlay.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = "scannerOverlay.xib"; path = "scannerOverlay.xib"; sourceTree = "<group>"; fileEncoding = 4; };
+		9F935E10D05F4A61A39A5792 /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libiconv.dylib"; path = "usr/lib/libiconv.dylib"; sourceTree = SDKROOT; fileEncoding = 4; };
+		19C6FE8E91ED449C8A792D9F /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "AVFoundation.framework"; path = "System/Library/Frameworks/AVFoundation.framework"; sourceTree = SDKROOT; fileEncoding = 4; };
+		2E50A344913F4C71A25D338C /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "CoreVideo.framework"; path = "System/Library/Frameworks/CoreVideo.framework"; sourceTree = SDKROOT; fileEncoding = 4; };
+		E64C7384D07A4612BC97AF2D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "QuartzCore.framework"; path = "System/Library/Frameworks/QuartzCore.framework"; sourceTree = SDKROOT; fileEncoding = 4; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,7 +188,10 @@
 				D849EBE873664B69BD94D70C /* CoreMotion.framework in Frameworks */,
 				EB2A256C76214F7E8A1C48BC /* ImageIO.framework in Frameworks */,
 				AB4EA814D8C045F980AABC91 /* AudioToolbox.framework in Frameworks */,
-				41808D7074D54FA1A71C7AE3 /* CoreBluetooth.framework in Frameworks */,
+				B4D4E29A561D4C30A301DFE2 /* libiconv.dylib in Frameworks */,
+				E4FC10CBB40A4E8A9EB16C8C /* AVFoundation.framework in Frameworks */,
+				4C084137CFB54EA5BFCC128A /* CoreVideo.framework in Frameworks */,
+				8DCEE21CB2CA4FEF8A386326 /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,6 +275,7 @@
 				8D1107310486CEB800E47090 /* HelloCordova-Info.plist */,
 				F7A2E63251E84A4987EF069A /* CDVCapture.bundle */,
 				794096A6F4B34A6399857565 /* CDVNotification.bundle */,
+				47306769CEF344308D2094FE /* scannerOverlay.xib */,
 			);
 			name = Resources;
 			path = "HelloCordova/Resources";
@@ -277,7 +291,10 @@
 				BCD2686BA5B14CA3A6C5A7F4 /* CoreMotion.framework */,
 				A366F49386E443A5934EE5EE /* ImageIO.framework */,
 				F44BCE693B304A418650E13C /* AudioToolbox.framework */,
-				50BD6ABEB36F4F3FA6ADFF35 /* CoreBluetooth.framework */,
+				9F935E10D05F4A61A39A5792 /* libiconv.dylib */,
+				19C6FE8E91ED449C8A792D9F /* AVFoundation.framework */,
+				2E50A344913F4C71A25D338C /* CoreVideo.framework */,
+				E64C7384D07A4612BC97AF2D /* QuartzCore.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -324,8 +341,9 @@
 				75820430414A4535AED959C9 /* CDVNotification.h */,
 				1486364988E547229529DF03 /* CDVVibration.m */,
 				D0A1C60DF93E4421807C3C56 /* CDVVibration.h */,
-				1390303B79214B1AA7FB16A6 /* BluetoothLePlugin.m */,
-				8337971D2D724DABACFF590C /* BluetoothLePlugin.h */,
+				A68029B387534046A34325B4 /* CDVBarcodeScanner.mm */,
+				28D2C0B8FBB54DCFBB5AA720 /* zxing-all-in-one.cpp */,
+				8AB4FF11D4304D0D87132DB5 /* zxing-all-in-one.h */,
 			);
 			name = Plugins;
 			path = "HelloCordova/Plugins";
@@ -491,6 +509,7 @@
 				30FC414916E50CA1004E6F35 /* icon-72@2x.png in Resources */,
 				7292AABB5F484A2D83FBBF3A /* CDVCapture.bundle in Resources */,
 				6D22FC6E2F0E43609E3D9F2E /* CDVNotification.bundle in Resources */,
+				72C0DA637978494CBC046C7F /* scannerOverlay.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -537,7 +556,8 @@
 				24DD29DE9505472D913D402A /* CDVSound.m in Sources */,
 				4A2F6ADFBA614DC3BBB8F7A5 /* CDVNotification.m in Sources */,
 				728087A81D6343E2966D8532 /* CDVVibration.m in Sources */,
-				C39E82365BF34B1DA70C7608 /* BluetoothLePlugin.m in Sources */,
+				2FEE7DB12CB646F3B7712345 /* CDVBarcodeScanner.mm in Resources */,
+				FAAD38B5BE4E416DA995B683 /* zxing-all-in-one.cpp in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

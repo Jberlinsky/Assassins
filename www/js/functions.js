@@ -58,6 +58,7 @@ function killUser(target_id, user_id) {
       var user = snapshot;
       user.target =  holder;
       userRef.set(user);
+      window.app_state = 'seeking';
     });
   });
 }
@@ -90,13 +91,11 @@ function updateLocation(user_id, geolocation_obj) {
     if (geolocation_obj.coords.altitude) {
       target.geo_alt = geolocation_obj.coords.altitude;
     }
-    if (geolocation_obj.coords.speed) {
-      if (target.geo_updated_at && target.geo_speed) {
-        target.geo_acceleration = (geolocation_obj.coords.speed - target.geo_speed) / (geolocation_obj.timestamp - target.geo_updated_at)
-      }
-      target.geo_speed = geolocation_obj.coords.speed;
-    }
-    target.geo_updated_at = geolocation_obj.timestamp;
     targetRef.set(target);
   });
+}
+
+function findUserInRange(user_id, successCallback) {
+  // TODO: Find user in decrypt range. If multiple, return only one.
+  // Call successCallback(found_user);
 }

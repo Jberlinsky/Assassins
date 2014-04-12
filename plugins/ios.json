@@ -65,7 +65,7 @@
                             "count": 1
                         },
                         {
-                            "xml": "<feature name=\"BluetoothLePlugin\"><param name=\"ios-package\" value=\"BluetoothLePlugin\" /></feature>",
+                            "xml": "<feature name=\"BarcodeScanner\"><param name=\"ios-package\" value=\"CDVBarcodeScanner\" /></feature>",
                             "count": 1
                         }
                     ]
@@ -100,7 +100,7 @@
                     "AssetsLibrary.framework": [
                         {
                             "xml": "false",
-                            "count": 4
+                            "count": 5
                         }
                     ],
                     "MobileCoreServices.framework": [
@@ -115,7 +115,26 @@
                             "count": 4
                         }
                     ],
-                    "CoreBluetooth.framework": [
+                    "CoreBluetooth.framework": [],
+                    "libiconv.dylib": [
+                        {
+                            "xml": "false",
+                            "count": 1
+                        }
+                    ],
+                    "AVFoundation.framework": [
+                        {
+                            "xml": "false",
+                            "count": 1
+                        }
+                    ],
+                    "CoreVideo.framework": [
+                        {
+                            "xml": "false",
+                            "count": 1
+                        }
+                    ],
+                    "QuartzCore.framework": [
                         {
                             "xml": "false",
                             "count": 1
@@ -159,7 +178,7 @@
         "org.apache.cordova.vibration": {
             "PACKAGE_NAME": "com.ionicframework.starter"
         },
-        "com.randdusing.bluetoothle": {
+        "com.phonegap.plugins.barcodescanner": {
             "PACKAGE_NAME": "com.jasonberlinsky.assassins"
         }
     },

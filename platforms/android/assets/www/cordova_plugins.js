@@ -190,10 +190,10 @@ module.exports = [
         ]
     },
     {
-        "file": "plugins/com.randdusing.bluetoothle/www/bluetoothle.js",
-        "id": "com.randdusing.bluetoothle.BluetoothLe",
+        "file": "plugins/com.phonegap.plugins.barcodescanner/www/barcodescanner.js",
+        "id": "com.phonegap.plugins.barcodescanner.BarcodeScanner",
         "clobbers": [
-            "window.bluetoothle"
+            "cordova.plugins.barcodeScanner"
         ]
     },
     {
@@ -340,7 +340,7 @@ module.exports.metadata =
     "org.apache.cordova.media": "0.2.9",
     "org.apache.cordova.dialogs": "0.2.6",
     "org.apache.cordova.vibration": "0.3.7",
-    "com.randdusing.bluetoothle": "1.0.0",
+    "com.phonegap.plugins.barcodescanner": "1.0.1",
     "org.apache.cordova.file": "1.0.1"
 }
 // BOTTOM OF METADATA
