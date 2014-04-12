@@ -21,60 +21,50 @@ angular.module('assassin.controllers', [])
   $rootScope.$on('$firebaseSimpleLogin:login', _login);
   $rootScope.$on('$firebaseSimpleLogin:logout', _logout);
   $rootScope.$on('$firebaseSimpleLogin:error', _error);
-
-  navigator.geolocation.watchPosition(function(position) {
-    if ($rootScope.auth && $rootScope.auth.user && $rootScope.auth.user.id) {
-      updateLocation($rootScope.auth.user.id, position);
-    }
-  });
 })
 
 .controller('TargetCtrl', function($scope, $firebase, $rootScope) {
   decryptOneCharacter = function() {
+    // TODO UI element of this.
     getPwChar($rootScope.auth.user.id);
   };
 
-  navigator.geolocation.watchPosition(function(position) {
-    if ($rootScope.auth && $rootScope.auth.user && $rootScope.auth.user.id) {
+  if ($rootScope.auth && $rootScope.auth.user) {
+    navigator.geolocation.watchPosition(function(position) {
+      $scope.target = $firebase($rootScope.assassin.child('target'));
+      $scope.coords = position.coords;
+      $scope.target_pw_cracked = $scope.target.pw_cracked;
+      $scope.target_pw_remaining = $scope.target.pw_remaining;
+      $scope.i_am_killable = $scope.target.pw_compromised;
       updateLocation($rootScope.auth.user.id, position);
       if (window.app_state === undefined) { window.app_state = 'seeking'; }
       if (window.app_state == 'seeking') {
         // Look for nearby users to decrypt
-        debugger;
-        findUserInRange($rootScope.auth.user.id, function(target) {
-          if (target.id == $scope.target.id) {
-            // Start decrypting
-            window.app_state = 'decrypting';
-            var N_SEC = 2;
-            window.setTimeout(decryptOneCharacter, N_SEC * 1000);
-          }
+        findTargetInRange($rootScope.auth.user.id, $scope.target.id, position.coords, function(target) {
+          // Start decrypting
+          window.app_state = 'decrypting';
+          var N_SEC = 2;
+          window.setTimeout(decryptOneCharacter, N_SEC * 1000);
         });
       } else if (window.app_state == 'decrypting') {
         // Every N seconds, decrypt one character
         if ($scope.target_pw_remaining == "") {
           window.state = 'broken';
         }
+      } else if ($scope.i_am_killable) {
+        // Display kill button
+        // When the button is clicked, execute kill_user on THAT PHONE's user as the target, and OUR PHONE's user as the user_id
+        // TODO AIDEN show the kill screen
+        $('#kill_button').on('click', function(e) {
+          // TODO AIDEN killUser
+          // TODO show that the user has been killed
+        });
       } else if (window.app_state == 'broken') {
         // Go in for the kill
-        cordova.plugins.barcodeScanner.scan(function (result) {
-          var scanned_result = result.text;
-          if (scanned_result == $scope.target.id) {
-            // We just killed our target
-            killUser($scope.target.id, $rootScope.auth.user.id);
-            alert("You have killed " + $scope.target.name + "!");
-          }
-        },
-        function (error) {
-            alert("Scanning failed: " + error);
-        });
+        enableKillBetween($rootScope.auth.user.id, $scope.target.id);
       }
-    }
-  });
-  //debugger;
-  // ------ This binds the "wattup" scope item to an item in firebase --------
-  $scope.target = $firebase($rootScope.assassin.child('target'));
-  $scope.target_pw_cracked = $scope.target.pw_cracked;
-  $scope.target_pw_remaining = $scope.target.pw_remaining;
+    });
+  };
 })
 
 .controller('ProfileCtrl', function($scope) {

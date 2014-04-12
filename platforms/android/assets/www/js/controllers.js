@@ -1,28 +1,70 @@
-angular.module('starter.controllers', [])
+angular.module('assassin.controllers', [])
 
-.controller('DashCtrl', function($scope) {
-	var captureSuccess = function(stuff) {
-		console.log(stuff);
-	}
+.controller('AppCtrl', function($scope, $rootScope, $location, $firebaseSimpleLogin) {
+  // Firebase
+  $rootScope.assassin = new Firebase("http://vivid-fire-2947.firebaseio.com");
+  $rootScope.auth = $firebaseSimpleLogin($rootScope.assassin);
 
-	var captureError = function(err) {
-		console.log(err);
-	}
+  function _login($scope, user) {
+    genUser(user.id);
+    $location.path('/tab/target');
+  }
 
-	$scope.captureImage = function() {
-	    // Launch device camera application, 
-	    // allowing user to capture up to 2 images
-	    navigator.device.capture.captureImage(captureSuccess, captureError, { limit: 2 });
-	}
+  function _logout() {
+    $location.path('/login');
+  }
+
+  function _error(err) {
+    console.log(err);
+  }
+
+  $rootScope.$on('$firebaseSimpleLogin:login', _login);
+  $rootScope.$on('$firebaseSimpleLogin:logout', _logout);
+  $rootScope.$on('$firebaseSimpleLogin:error', _error);
 })
 
-.controller('FriendsCtrl', function($scope, Friends) {
-  $scope.friends = Friends.all();
+.controller('TargetCtrl', function($scope, $firebase, $rootScope) {
+  decryptOneCharacter = function() {
+    // TODO UI element of this.
+    getPwChar($rootScope.auth.user.id);
+  };
+
+  if ($rootScope.auth && $rootScope.auth.user) {
+    navigator.geolocation.watchPosition(function(position) {
+      $scope.target = $firebase($rootScope.assassin.child('target'));
+      $scope.coords = position.coords;
+      $scope.target_pw_cracked = $scope.target.pw_cracked;
+      $scope.target_pw_remaining = $scope.target.pw_remaining;
+      $scope.i_am_killable = $scope.target.pw_compromised;
+      updateLocation($rootScope.auth.user.id, position);
+      if (window.app_state === undefined) { window.app_state = 'seeking'; }
+      if (window.app_state == 'seeking') {
+        // Look for nearby users to decrypt
+        findTargetInRange($rootScope.auth.user.id, $scope.target.id, position.coords, function(target) {
+          // Start decrypting
+          window.app_state = 'decrypting';
+          var N_SEC = 2;
+          window.setTimeout(decryptOneCharacter, N_SEC * 1000);
+        });
+      } else if (window.app_state == 'decrypting') {
+        // Every N seconds, decrypt one character
+        if ($scope.target_pw_remaining == "") {
+          window.state = 'broken';
+        }
+      } else if ($scope.i_am_killable) {
+        // Display kill button
+        // When the button is clicked, execute kill_user on THAT PHONE's user as the target, and OUR PHONE's user as the user_id
+      } else if (window.app_state == 'broken') {
+        // Go in for the kill
+        enableKillBetween($rootScope.auth.user.id, $scope.target.id);
+      }
+    });
+  };
 })
 
-.controller('FriendDetailCtrl', function($scope, $stateParams, Friends) {
-  $scope.friend = Friends.get($stateParams.friendId);
+.controller('ProfileCtrl', function($scope) {
+  $scope.whatever = "cool";
 })
 
-.controller('AccountCtrl', function($scope) {
+.controller('LoginCtrl', function($scope) {
 });
