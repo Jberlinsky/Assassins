@@ -9,4 +9,16 @@
     </author>
     <content src="index.html" />
     <access origin="*" />
+    <preference name="com.urbanairship.production_app_key" value="8aV5ozlxQBiqYKAgseAoXw" />
+    <preference name="com.urbanairship.production_app_secret" value="6owihkuHRB-WEyeaazZv1Q" />
+    <preference name="com.urbanairship.development_app_key" value="bSTj3n-LSE-w4hh-edGaIQ" />
+    <preference name="com.urbanairship.development_app_secret" value="e7kO4AV3TwWdkAVOAT9P9A" />
+    <preference name="com.urbanairship.in_production" value="false" />
+    <preference name="com.urbanairship.gcm_sender" value="1072244305575" />
+    <preference name="com.urbanairship.enable_push_onlaunch" value="true" />
+
+    <preference name="LoadingDialog" value="Loading,Please wait"/>
+    <preference name="LogLevel" value="VERBOSE"/>
+    <preference name="SetFullscreen" value="true"/>
+    <preference name="KeepRunning" value="true"/>
 </widget>

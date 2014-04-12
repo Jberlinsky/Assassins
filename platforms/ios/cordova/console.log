@@ -1,0 +1,315 @@
+2014-04-11 21:08:58.957 Assassins[30071:70b] Multi-tasking -> Device: YES, App: YES
+2014-04-11 21:08:58.989 Assassins[30071:70b] Unlimited access to network resources
+2014-04-11 21:08:59.197 Assassins[30071:70b] [I] +[UAirship executeUnsafeTakeOff:] [Line 145] App Key: bSTj3n-LSE-w4hh-edGaIQ
+2014-04-11 21:08:59.198 Assassins[30071:70b] [I] +[UAirship executeUnsafeTakeOff:] [Line 146] App Secret: e7kO4AV3TwWdkAVOAT9P9A
+2014-04-11 21:08:59.198 Assassins[30071:70b] [I] +[UAirship executeUnsafeTakeOff:] [Line 147] Server: https://device-api.urbanairship.com
+2014-04-11 21:08:59.200 Assassins[30071:70b] [D] -[UAirship configureUserAgent] [Line 311] Setting User-Agent for UA requests to Assassins 1.0 (iPhone Simulator; iPhone OS 7.1; UALib 3.0.3; bSTj3n-LSE-w4hh-edGaIQ; en_US)
+2014-04-11 21:08:59.204 Assassins[30071:70b] [D] void PrintReachabilityFlags(SCNetworkReachabilityFlags, const char *) [Line 79] Reachability Flag Status: -R -----l- networkStatusForFlags
+2014-04-11 21:08:59.205 Assassins[30071:70b] [I] +[UAirship executeUnsafeTakeOff:] [Line 190] Registering UAURLProtocol
+2014-04-11 21:08:59.208 Assassins[30071:70b] [D] +[UAKeychainUtils getDeviceID] [Line 259] Device model changed. Regenerating the device ID.
+2014-04-11 21:08:59.227 Assassins[30071:70b] [D] +[UAKeychainUtils getDeviceID] [Line 262] New device ID: 11CCE3C8-FCEF-4ED1-BDE3-663254762D4A
+2014-04-11 21:08:59.228 Assassins[30071:70b] [D] -[UAUserAPIClient requestToCreateUserWithDeviceToken:] [Line 52] Request to create user with body: {"ua_device_id":"11CCE3C8-FCEF-4ED1-BDE3-663254762D4A"}
+2014-04-11 21:08:59.230 Assassins[30071:70b] [D] -[UALocationService startReportingSignificantLocationChanges] [Line 311] Attempt to start significant change service
+2014-04-11 21:08:59.235 Assassins[30071:70b] [D] -[UALocationService startReportingLocationWithProvider:] [Line 480] Location service not authorized or not enabled
+2014-04-11 21:08:59.236 Assassins[30071:70b] [CDVTimer][pushnotificationplugin] 40.490985ms
+2014-04-11 21:08:59.237 Assassins[30071:70b] [CDVTimer][TotalPluginStartup] 41.085005ms
+2014-04-11 21:08:59.392 Assassins[30071:70b] [D] -[UAStandardLocationProvider locationManager:didChangeAuthorizationStatus:] [Line 54] Standard location authorization changed 0
+2014-04-11 21:08:59.393 Assassins[30071:70b] [D] -[UALocationService locationProvider:withLocationManager:didChangeAuthorizationStatus:] [Line 224] Location service did change authorization status 0
+2014-04-11 21:08:59.393 Assassins[30071:70b] [D] -[UASignificantChangeProvider locationManager:didChangeAuthorizationStatus:] [Line 51] Significant change did change authorization status 0
+2014-04-11 21:08:59.394 Assassins[30071:70b] [D] -[UALocationService locationProvider:withLocationManager:didChangeAuthorizationStatus:] [Line 224] Location service did change authorization status 0
+2014-04-11 21:08:59.506 Assassins[30071:70b] Resetting plugins due to page load.
+2014-04-11 21:08:59.623 Assassins[30071:70b] [D] -[UAUser updateDefaultDeviceToken] [Line 252] Skipping device token update: no token, already up to date, or user is being updated.
+2014-04-11 21:08:59.656 Assassins[30071:70b] Finished load of: file:///Users/jberlinsky/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/FFCC0B70-6189-4A8A-86CC-2813629D2543/Assassins.app/www/index.html
+2014-04-11 21:09:14.358 Assassins[30071:70b] [D] __39-[UAAnalytics sendOperationWithEvents:]_block_invoke [Line 622] Analytics data sent successfully. Status: 200
+2014-04-11 21:09:19.507 Assassins[30375:70b] Multi-tasking -> Device: YES, App: YES
+2014-04-11 21:09:19.516 Assassins[30375:70b] Unlimited access to network resources
+2014-04-11 21:09:19.543 Assassins[30375:70b] [I] +[UAirship executeUnsafeTakeOff:] [Line 145] App Key: bSTj3n-LSE-w4hh-edGaIQ
+2014-04-11 21:09:19.544 Assassins[30375:70b] [I] +[UAirship executeUnsafeTakeOff:] [Line 146] App Secret: e7kO4AV3TwWdkAVOAT9P9A
+2014-04-11 21:09:19.544 Assassins[30375:70b] [I] +[UAirship executeUnsafeTakeOff:] [Line 147] Server: https://device-api.urbanairship.com
+2014-04-11 21:09:19.545 Assassins[30375:70b] [D] -[UAirship configureUserAgent] [Line 311] Setting User-Agent for UA requests to Assassins 1.0 (iPhone Simulator; iPhone OS 7.1; UALib 3.0.3; bSTj3n-LSE-w4hh-edGaIQ; en_US)
+2014-04-11 21:09:19.547 Assassins[30375:70b] [D] void PrintReachabilityFlags(SCNetworkReachabilityFlags, const char *) [Line 79] Reachability Flag Status: -R -----l- networkStatusForFlags
+2014-04-11 21:09:19.549 Assassins[30375:70b] [I] +[UAirship executeUnsafeTakeOff:] [Line 190] Registering UAURLProtocol
+2014-04-11 21:09:19.552 Assassins[30375:70b] [D] -[UALocationService startReportingSignificantLocationChanges] [Line 311] Attempt to start significant change service
+2014-04-11 21:09:19.557 Assassins[30375:70b] [D] -[UALocationService startReportingLocationWithProvider:] [Line 480] Location service not authorized or not enabled
+2014-04-11 21:09:19.558 Assassins[30375:70b] [CDVTimer][pushnotificationplugin] 15.960038ms
+2014-04-11 21:09:19.559 Assassins[30375:70b] [CDVTimer][TotalPluginStartup] 17.044961ms
+2014-04-11 21:09:19.589 Assassins[30375:70b] [D] -[UAStandardLocationProvider locationManager:didChangeAuthorizationStatus:] [Line 54] Standard location authorization changed 0
+2014-04-11 21:09:19.590 Assassins[30375:70b] [D] -[UALocationService locationProvider:withLocationManager:didChangeAuthorizationStatus:] [Line 224] Location service did change authorization status 0
+2014-04-11 21:09:19.590 Assassins[30375:70b] [D] -[UASignificantChangeProvider locationManager:didChangeAuthorizationStatus:] [Line 51] Significant change did change authorization status 0
+2014-04-11 21:09:19.590 Assassins[30375:70b] [D] -[UALocationService locationProvider:withLocationManager:didChangeAuthorizationStatus:] [Line 224] Location service did change authorization status 0
+2014-04-11 21:09:19.622 Assassins[30375:70b] Resetting plugins due to page load.
+2014-04-11 21:09:19.682 Assassins[30375:70b] Finished load of: file:///Users/jberlinsky/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/FFCC0B70-6189-4A8A-86CC-2813629D2543/Assassins.app/www/index.html
+2014-04-11 21:09:34.550 Assassins[30375:e03] [D] +[UAKeychainUtils getDeviceID] [Line 238] Retrieved device id info from keychain.
+2014-04-11 21:09:34.551 Assassins[30375:e03] [D] +[UAKeychainUtils getDeviceID] [Line 245] Loaded Device ID: 11CCE3C8-FCEF-4ED1-BDE3-663254762D4A
+2014-04-11 21:09:34.551 Assassins[30375:e03] [D] +[UAKeychainUtils getDeviceID] [Line 246] Loaded Model Name: x86_64
+2014-04-11 21:09:34.700 Assassins[30375:70b] [D] __39-[UAAnalytics sendOperationWithEvents:]_block_invoke [Line 622] Analytics data sent successfully. Status: 200
+2014-04-11 21:09:38.379 Assassins[30375:70b] [D] -[UALocationService appDidEnterBackground] [Line 127] Location service did enter background
+2014-04-11 21:10:30.144 Assassins[31277:70b] Multi-tasking -> Device: YES, App: YES
+2014-04-11 21:10:30.150 Assassins[31277:70b] Unlimited access to network resources
+2014-04-11 21:10:30.164 Assassins[31277:70b] [I] +[UAirship executeUnsafeTakeOff:] [Line 145] App Key: bSTj3n-LSE-w4hh-edGaIQ
+2014-04-11 21:10:30.165 Assassins[31277:70b] [I] +[UAirship executeUnsafeTakeOff:] [Line 146] App Secret: e7kO4AV3TwWdkAVOAT9P9A
+2014-04-11 21:10:30.165 Assassins[31277:70b] [I] +[UAirship executeUnsafeTakeOff:] [Line 147] Server: https://device-api.urbanairship.com
+2014-04-11 21:10:30.166 Assassins[31277:70b] [D] -[UAirship configureUserAgent] [Line 311] Setting User-Agent for UA requests to Assassins 1.0 (iPhone Simulator; iPhone OS 7.1; UALib 3.0.3; bSTj3n-LSE-w4hh-edGaIQ; en_US)
+2014-04-11 21:10:30.167 Assassins[31277:70b] [D] void PrintReachabilityFlags(SCNetworkReachabilityFlags, const char *) [Line 79] Reachability Flag Status: -R -----l- networkStatusForFlags
+2014-04-11 21:10:30.168 Assassins[31277:70b] [I] +[UAirship executeUnsafeTakeOff:] [Line 190] Registering UAURLProtocol
+2014-04-11 21:10:30.170 Assassins[31277:70b] [D] -[UALocationService startReportingSignificantLocationChanges] [Line 311] Attempt to start significant change service
+2014-04-11 21:10:30.174 Assassins[31277:70b] [D] -[UALocationService startReportingLocationWithProvider:] [Line 480] Location service not authorized or not enabled
+2014-04-11 21:10:30.174 Assassins[31277:70b] [CDVTimer][pushnotificationplugin] 10.028958ms
+2014-04-11 21:10:30.174 Assassins[31277:70b] [CDVTimer][TotalPluginStartup] 10.313988ms
+2014-04-11 21:10:30.199 Assassins[31277:70b] [D] -[UAStandardLocationProvider locationManager:didChangeAuthorizationStatus:] [Line 54] Standard location authorization changed 0
+2014-04-11 21:10:30.199 Assassins[31277:70b] [D] -[UALocationService locationProvider:withLocationManager:didChangeAuthorizationStatus:] [Line 224] Location service did change authorization status 0
+2014-04-11 21:10:30.199 Assassins[31277:70b] [D] -[UASignificantChangeProvider locationManager:didChangeAuthorizationStatus:] [Line 51] Significant change did change authorization status 0
+2014-04-11 21:10:30.199 Assassins[31277:70b] [D] -[UALocationService locationProvider:withLocationManager:didChangeAuthorizationStatus:] [Line 224] Location service did change authorization status 0
+2014-04-11 21:10:30.241 Assassins[31277:70b] Resetting plugins due to page load.
+2014-04-11 21:10:39.570 Assassins[31277:70b] Finished load of: file:///Users/jberlinsky/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/FFCC0B70-6189-4A8A-86CC-2813629D2543/Assassins.app/www/index.html
+2014-04-11 21:10:49.171 Assassins[31277:e03] [D] +[UAKeychainUtils getDeviceID] [Line 238] Retrieved device id info from keychain.
+2014-04-11 21:10:49.171 Assassins[31277:e03] [D] +[UAKeychainUtils getDeviceID] [Line 245] Loaded Device ID: 11CCE3C8-FCEF-4ED1-BDE3-663254762D4A
+2014-04-11 21:10:49.171 Assassins[31277:e03] [D] +[UAKeychainUtils getDeviceID] [Line 246] Loaded Model Name: x86_64
+2014-04-11 21:10:49.348 Assassins[31277:70b] [D] __39-[UAAnalytics sendOperationWithEvents:]_block_invoke [Line 622] Analytics data sent successfully. Status: 200
+2014-04-11 21:11:04.694 Assassins[31757:70b] Multi-tasking -> Device: YES, App: YES
+2014-04-11 21:11:04.699 Assassins[31757:70b] Unlimited access to network resources
+2014-04-11 21:11:04.713 Assassins[31757:70b] [I] +[UAirship executeUnsafeTakeOff:] [Line 145] App Key: bSTj3n-LSE-w4hh-edGaIQ
+2014-04-11 21:11:04.713 Assassins[31757:70b] [I] +[UAirship executeUnsafeTakeOff:] [Line 146] App Secret: e7kO4AV3TwWdkAVOAT9P9A
+2014-04-11 21:11:04.714 Assassins[31757:70b] [I] +[UAirship executeUnsafeTakeOff:] [Line 147] Server: https://device-api.urbanairship.com
+2014-04-11 21:11:04.714 Assassins[31757:70b] [D] -[UAirship configureUserAgent] [Line 311] Setting User-Agent for UA requests to Assassins 1.0 (iPhone Simulator; iPhone OS 7.1; UALib 3.0.3; bSTj3n-LSE-w4hh-edGaIQ; en_US)
+2014-04-11 21:11:04.715 Assassins[31757:70b] [D] void PrintReachabilityFlags(SCNetworkReachabilityFlags, const char *) [Line 79] Reachability Flag Status: -R -----l- networkStatusForFlags
+2014-04-11 21:11:04.716 Assassins[31757:70b] [I] +[UAirship executeUnsafeTakeOff:] [Line 190] Registering UAURLProtocol
+2014-04-11 21:11:04.718 Assassins[31757:70b] [D] -[UALocationService startReportingSignificantLocationChanges] [Line 311] Attempt to start significant change service
+2014-04-11 21:11:04.722 Assassins[31757:70b] [D] -[UALocationService startReportingLocationWithProvider:] [Line 480] Location service not authorized or not enabled
+2014-04-11 21:11:04.722 Assassins[31757:70b] [CDVTimer][pushnotificationplugin] 9.723008ms
+2014-04-11 21:11:04.723 Assassins[31757:70b] [CDVTimer][TotalPluginStartup] 10.047972ms
+2014-04-11 21:11:04.737 Assassins[31757:70b] [D] -[UAStandardLocationProvider locationManager:didChangeAuthorizationStatus:] [Line 54] Standard location authorization changed 0
+2014-04-11 21:11:04.737 Assassins[31757:70b] [D] -[UALocationService locationProvider:withLocationManager:didChangeAuthorizationStatus:] [Line 224] Location service did change authorization status 0
+2014-04-11 21:11:04.737 Assassins[31757:70b] [D] -[UASignificantChangeProvider locationManager:didChangeAuthorizationStatus:] [Line 51] Significant change did change authorization status 0
+2014-04-11 21:11:04.737 Assassins[31757:70b] [D] -[UALocationService locationProvider:withLocationManager:didChangeAuthorizationStatus:] [Line 224] Location service did change authorization status 0
+2014-04-11 21:11:04.757 Assassins[31757:70b] Resetting plugins due to page load.
+2014-04-11 21:11:19.718 Assassins[31757:e03] [D] +[UAKeychainUtils getDeviceID] [Line 238] Retrieved device id info from keychain.
+2014-04-11 21:11:19.718 Assassins[31757:e03] [D] +[UAKeychainUtils getDeviceID] [Line 245] Loaded Device ID: 11CCE3C8-FCEF-4ED1-BDE3-663254762D4A
+2014-04-11 21:11:19.718 Assassins[31757:e03] [D] +[UAKeychainUtils getDeviceID] [Line 246] Loaded Model Name: x86_64
+2014-04-11 21:11:19.836 Assassins[31757:70b] [D] __39-[UAAnalytics sendOperationWithEvents:]_block_invoke [Line 622] Analytics data sent successfully. Status: 200
+2014-04-11 21:11:39.361 Assassins[32222:70b] Multi-tasking -> Device: YES, App: YES
+2014-04-11 21:11:39.367 Assassins[32222:70b] Unlimited access to network resources
+2014-04-11 21:11:39.382 Assassins[32222:70b] [I] +[UAirship executeUnsafeTakeOff:] [Line 145] App Key: bSTj3n-LSE-w4hh-edGaIQ
+2014-04-11 21:11:39.382 Assassins[32222:70b] [I] +[UAirship executeUnsafeTakeOff:] [Line 146] App Secret: e7kO4AV3TwWdkAVOAT9P9A
+2014-04-11 21:11:39.383 Assassins[32222:70b] [I] +[UAirship executeUnsafeTakeOff:] [Line 147] Server: https://device-api.urbanairship.com
+2014-04-11 21:11:39.383 Assassins[32222:70b] [D] -[UAirship configureUserAgent] [Line 311] Setting User-Agent for UA requests to Assassins 1.0 (iPhone Simulator; iPhone OS 7.1; UALib 3.0.3; bSTj3n-LSE-w4hh-edGaIQ; en_US)
+2014-04-11 21:11:39.385 Assassins[32222:70b] [D] void PrintReachabilityFlags(SCNetworkReachabilityFlags, const char *) [Line 79] Reachability Flag Status: -R -----l- networkStatusForFlags
+2014-04-11 21:11:39.385 Assassins[32222:70b] [I] +[UAirship executeUnsafeTakeOff:] [Line 190] Registering UAURLProtocol
+2014-04-11 21:11:39.388 Assassins[32222:70b] [D] -[UALocationService startReportingSignificantLocationChanges] [Line 311] Attempt to start significant change service
+2014-04-11 21:11:39.392 Assassins[32222:70b] [D] -[UALocationService startReportingLocationWithProvider:] [Line 480] Location service not authorized or not enabled
+2014-04-11 21:11:39.392 Assassins[32222:70b] [CDVTimer][pushnotificationplugin] 10.546029ms
+2014-04-11 21:11:39.392 Assassins[32222:70b] [CDVTimer][TotalPluginStartup] 10.860980ms
+2014-04-11 21:11:39.407 Assassins[32222:70b] [D] -[UAStandardLocationProvider locationManager:didChangeAuthorizationStatus:] [Line 54] Standard location authorization changed 0
+2014-04-11 21:11:39.407 Assassins[32222:70b] [D] -[UALocationService locationProvider:withLocationManager:didChangeAuthorizationStatus:] [Line 224] Location service did change authorization status 0
+2014-04-11 21:11:39.407 Assassins[32222:70b] [D] -[UASignificantChangeProvider locationManager:didChangeAuthorizationStatus:] [Line 51] Significant change did change authorization status 0
+2014-04-11 21:11:39.407 Assassins[32222:70b] [D] -[UALocationService locationProvider:withLocationManager:didChangeAuthorizationStatus:] [Line 224] Location service did change authorization status 0
+2014-04-11 21:11:39.427 Assassins[32222:70b] Resetting plugins due to page load.
+2014-04-11 21:11:54.104 Assassins[32222:70b] [D] -[UALocationService appDidEnterBackground] [Line 127] Location service did enter background
+2014-04-11 21:11:55.176 Assassins[32222:70b] [D] -[UALocationService appWillEnterForeground] [Line 117] Location service did receive appWillEnterForeground
+2014-04-11 21:11:55.176 Assassins[32222:70b] [D] -[UALocationService restartPreviousLocationServices] [Line 105] Restarting location providers that were previously running
+2014-04-11 21:11:55.177 Assassins[32222:70b] [D] void PrintReachabilityFlags(SCNetworkReachabilityFlags, const char *) [Line 79] Reachability Flag Status: -R -----l- networkStatusForFlags
+2014-04-11 21:11:55.177 Assassins[32222:70b] [D] -[UAPush updateRegistrationForcefully:] [Line 596] Device token is nil, unregistering with Urban Airship not possible. It is likely the app is already unregistered
+2014-04-11 21:11:57.583 Assassins[32222:3f03] void SendDelegateMessage(NSInvocation *): delegate (webView:runJavaScriptAlertPanelWithMessage:initiatedByFrame:) failed to return after waiting 10 seconds. main run loop mode: kCFRunLoopDefaultMode
+2014-04-11 21:11:57.609 Assassins[32222:70b] Attempt to set a non-property-list object (
+    "<null>"
+) as an NSUserDefaults value for key UAPushTags
+2014-04-11 21:11:57.626 Assassins[32222:70b] *** Terminating app due to uncaught exception 'NSInvalidArgumentException', reason: '*** -[NSUserDefaults setObject:forKey:]: attempt to insert non-property list object (
+    "<null>"
+) for key UAPushTags'
+*** First throw call stack:
+(
+	0   CoreFoundation                      0x001671e4 __exceptionPreprocess + 180
+	1   libobjc.A.dylib                     0x023788e5 objc_exception_throw + 44
+	2   CoreFoundation                      0x00166fbb +[NSException raise:format:] + 139
+	3   Foundation                          0x01d80a40 -[NSUserDefaults(NSUserDefaults) setObject:forKey:] + 150
+	4   Assassins                           0x00041686 -[UAPush setTags:] + 98
+	5   Assassins                           0x000285cd __34-[PushNotificationPlugin setTags:]_block_invoke + 237
+	6   Assassins                           0x00024acd __77-[PushNotificationPlugin performCallbackWithCommand:expecting:withVoidBlock:]_block_invoke + 77
+	7   Assassins                           0x00024660 __73-[PushNotificationPlugin performCallbackWithCommand:expecting:withBlock:]_block_invoke + 704
+	8   libdispatch.dylib                   0x02c887b8 _dispatch_call_block_and_release + 15
+	9   libdispatch.dylib                   0x02c9d4d0 _dispatch_client_callout + 14
+	10  libdispatch.dylib                   0x02c8b726 _dispatch_main_queue_callback_4CF + 340
+	11  CoreFoundation                      0x001cc43e __CFRUNLOOP_IS_SERVICING_THE_MAIN_DISPATCH_QUEUE__ + 14
+	12  CoreFoundation                      0x0010d5cb __CFRunLoopRun + 1963
+	13  CoreFoundation                      0x0010c9d3 CFRunLoopRunSpecific + 467
+	14  CoreFoundation                      0x0010c7eb CFRunLoopRunInMode + 123
+	15  GraphicsServices                    0x03afc5ee GSEventRunModal + 192
+	16  GraphicsServices                    0x03afc42b GSEventRun + 104
+	17  UIKit                               0x003cef9b UIApplicationMain + 1225
+	18  Assassins                           0x0002164c main + 92
+	19  libdyld.dylib                       0x02ed2701 start + 1
+)
+libc++abi.dylib: terminating with uncaught exception of type NSException
+2014-04-11 21:12:15.460 Assassins[32735:70b] Multi-tasking -> Device: YES, App: YES
+2014-04-11 21:12:15.465 Assassins[32735:70b] Unlimited access to network resources
+2014-04-11 21:12:15.481 Assassins[32735:70b] [I] +[UAirship executeUnsafeTakeOff:] [Line 145] App Key: bSTj3n-LSE-w4hh-edGaIQ
+2014-04-11 21:12:15.482 Assassins[32735:70b] [I] +[UAirship executeUnsafeTakeOff:] [Line 146] App Secret: e7kO4AV3TwWdkAVOAT9P9A
+2014-04-11 21:12:15.482 Assassins[32735:70b] [I] +[UAirship executeUnsafeTakeOff:] [Line 147] Server: https://device-api.urbanairship.com
+2014-04-11 21:12:15.482 Assassins[32735:70b] [D] -[UAirship configureUserAgent] [Line 311] Setting User-Agent for UA requests to Assassins 1.0 (iPhone Simulator; iPhone OS 7.1; UALib 3.0.3; bSTj3n-LSE-w4hh-edGaIQ; en_US)
+2014-04-11 21:12:15.484 Assassins[32735:70b] [D] void PrintReachabilityFlags(SCNetworkReachabilityFlags, const char *) [Line 79] Reachability Flag Status: -R -----l- networkStatusForFlags
+2014-04-11 21:12:15.485 Assassins[32735:70b] [I] +[UAirship executeUnsafeTakeOff:] [Line 190] Registering UAURLProtocol
+2014-04-11 21:12:15.487 Assassins[32735:70b] [D] -[UALocationService startReportingSignificantLocationChanges] [Line 311] Attempt to start significant change service
+2014-04-11 21:12:15.490 Assassins[32735:70b] [D] -[UALocationService startReportingLocationWithProvider:] [Line 480] Location service not authorized or not enabled
+2014-04-11 21:12:15.491 Assassins[32735:70b] [CDVTimer][pushnotificationplugin] 9.740055ms
+2014-04-11 21:12:15.491 Assassins[32735:70b] [CDVTimer][TotalPluginStartup] 10.049999ms
+2014-04-11 21:12:15.514 Assassins[32735:70b] [D] -[UAStandardLocationProvider locationManager:didChangeAuthorizationStatus:] [Line 54] Standard location authorization changed 0
+2014-04-11 21:12:15.515 Assassins[32735:70b] [D] -[UALocationService locationProvider:withLocationManager:didChangeAuthorizationStatus:] [Line 224] Location service did change authorization status 0
+2014-04-11 21:12:15.515 Assassins[32735:70b] [D] -[UASignificantChangeProvider locationManager:didChangeAuthorizationStatus:] [Line 51] Significant change did change authorization status 0
+2014-04-11 21:12:15.515 Assassins[32735:70b] [D] -[UALocationService locationProvider:withLocationManager:didChangeAuthorizationStatus:] [Line 224] Location service did change authorization status 0
+2014-04-11 21:12:15.562 Assassins[32735:70b] Resetting plugins due to page load.
+2014-04-11 21:12:17.666 Assassins[32735:70b] Attempt to set a non-property-list object (
+    "<null>"
+) as an NSUserDefaults value for key UAPushTags
+2014-04-11 21:12:17.667 Assassins[32735:70b] *** Terminating app due to uncaught exception 'NSInvalidArgumentException', reason: '*** -[NSUserDefaults setObject:forKey:]: attempt to insert non-property list object (
+    "<null>"
+) for key UAPushTags'
+*** First throw call stack:
+(
+	0   CoreFoundation                      0x001671e4 __exceptionPreprocess + 180
+	1   libobjc.A.dylib                     0x023788e5 objc_exception_throw + 44
+	2   CoreFoundation                      0x00166fbb +[NSException raise:format:] + 139
+	3   Foundation                          0x01d80a40 -[NSUserDefaults(NSUserDefaults) setObject:forKey:] + 150
+	4   Assassins                           0x00041686 -[UAPush setTags:] + 98
+	5   Assassins                           0x000285cd __34-[PushNotificationPlugin setTags:]_block_invoke + 237
+	6   Assassins                           0x00024acd __77-[PushNotificationPlugin performCallbackWithCommand:expecting:withVoidBlock:]_block_invoke + 77
+	7   Assassins                           0x00024660 __73-[PushNotificationPlugin performCallbackWithCommand:expecting:withBlock:]_block_invoke + 704
+	8   libdispatch.dylib                   0x02c887b8 _dispatch_call_block_and_release + 15
+	9   libdispatch.dylib                   0x02c9d4d0 _dispatch_client_callout + 14
+	10  libdispatch.dylib                   0x02c8b726 _dispatch_main_queue_callback_4CF + 340
+	11  CoreFoundation                      0x001cc43e __CFRUNLOOP_IS_SERVICING_THE_MAIN_DISPATCH_QUEUE__ + 14
+	12  CoreFoundation                      0x0010d5cb __CFRunLoopRun + 1963
+	13  CoreFoundation                      0x0010c9d3 CFRunLoopRunSpecific + 467
+	14  CoreFoundation                      0x0010c7eb CFRunLoopRunInMode + 123
+	15  GraphicsServices                    0x03afc5ee GSEventRunModal + 192
+	16  GraphicsServices                    0x03afc42b GSEventRun + 104
+	17  UIKit                               0x003cef9b UIApplicationMain + 1225
+	18  Assassins                           0x0002164c main + 92
+	19  libdyld.dylib                       0x02ed2701 start + 1
+)
+libc++abi.dylib: terminating with uncaught exception of type NSException
+2014-04-11 21:16:37.877 Assassins[35852:70b] Multi-tasking -> Device: YES, App: YES
+2014-04-11 21:16:37.883 Assassins[35852:70b] Unlimited access to network resources
+2014-04-11 21:16:37.903 Assassins[35852:70b] [I] +[UAirship executeUnsafeTakeOff:] [Line 145] App Key: bSTj3n-LSE-w4hh-edGaIQ
+2014-04-11 21:16:37.904 Assassins[35852:70b] [I] +[UAirship executeUnsafeTakeOff:] [Line 146] App Secret: e7kO4AV3TwWdkAVOAT9P9A
+2014-04-11 21:16:37.905 Assassins[35852:70b] [I] +[UAirship executeUnsafeTakeOff:] [Line 147] Server: https://device-api.urbanairship.com
+2014-04-11 21:16:37.906 Assassins[35852:70b] [D] -[UAirship configureUserAgent] [Line 311] Setting User-Agent for UA requests to Assassins 1.0 (iPhone Simulator; iPhone OS 7.1; UALib 3.0.3; bSTj3n-LSE-w4hh-edGaIQ; en_US)
+2014-04-11 21:16:37.908 Assassins[35852:70b] [D] void PrintReachabilityFlags(SCNetworkReachabilityFlags, const char *) [Line 79] Reachability Flag Status: -R -----l- networkStatusForFlags
+2014-04-11 21:16:37.910 Assassins[35852:70b] [I] +[UAirship executeUnsafeTakeOff:] [Line 190] Registering UAURLProtocol
+2014-04-11 21:16:37.913 Assassins[35852:70b] [D] -[UALocationService startReportingSignificantLocationChanges] [Line 311] Attempt to start significant change service
+2014-04-11 21:16:37.917 Assassins[35852:70b] [D] -[UALocationService startReportingLocationWithProvider:] [Line 480] Location service not authorized or not enabled
+2014-04-11 21:16:37.917 Assassins[35852:70b] [CDVTimer][pushnotificationplugin] 14.763951ms
+2014-04-11 21:16:37.918 Assassins[35852:70b] [CDVTimer][TotalPluginStartup] 15.080035ms
+2014-04-11 21:16:37.944 Assassins[35852:70b] [D] -[UAStandardLocationProvider locationManager:didChangeAuthorizationStatus:] [Line 54] Standard location authorization changed 0
+2014-04-11 21:16:37.944 Assassins[35852:70b] [D] -[UALocationService locationProvider:withLocationManager:didChangeAuthorizationStatus:] [Line 224] Location service did change authorization status 0
+2014-04-11 21:16:37.945 Assassins[35852:70b] [D] -[UASignificantChangeProvider locationManager:didChangeAuthorizationStatus:] [Line 51] Significant change did change authorization status 0
+2014-04-11 21:16:37.945 Assassins[35852:70b] [D] -[UALocationService locationProvider:withLocationManager:didChangeAuthorizationStatus:] [Line 224] Location service did change authorization status 0
+2014-04-11 21:16:38.100 Assassins[35852:70b] Resetting plugins due to page load.
+2014-04-11 21:16:42.119 Assassins[35852:70b] Finished load of: file:///Users/jberlinsky/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/FFCC0B70-6189-4A8A-86CC-2813629D2543/Assassins.app/www/index.html
+2014-04-11 21:16:52.913 Assassins[35852:e03] [D] +[UAKeychainUtils getDeviceID] [Line 238] Retrieved device id info from keychain.
+2014-04-11 21:16:52.913 Assassins[35852:e03] [D] +[UAKeychainUtils getDeviceID] [Line 245] Loaded Device ID: 11CCE3C8-FCEF-4ED1-BDE3-663254762D4A
+2014-04-11 21:16:52.914 Assassins[35852:e03] [D] +[UAKeychainUtils getDeviceID] [Line 246] Loaded Model Name: x86_64
+2014-04-11 21:16:53.030 Assassins[35852:70b] [D] __39-[UAAnalytics sendOperationWithEvents:]_block_invoke [Line 622] Analytics data sent successfully. Status: 200
+2014-04-11 21:17:52.666 Assassins[36797:70b] Multi-tasking -> Device: YES, App: YES
+2014-04-11 21:17:52.672 Assassins[36797:70b] Unlimited access to network resources
+2014-04-11 21:17:52.685 Assassins[36797:70b] [I] +[UAirship executeUnsafeTakeOff:] [Line 145] App Key: bSTj3n-LSE-w4hh-edGaIQ
+2014-04-11 21:17:52.686 Assassins[36797:70b] [I] +[UAirship executeUnsafeTakeOff:] [Line 146] App Secret: e7kO4AV3TwWdkAVOAT9P9A
+2014-04-11 21:17:52.686 Assassins[36797:70b] [I] +[UAirship executeUnsafeTakeOff:] [Line 147] Server: https://device-api.urbanairship.com
+2014-04-11 21:17:52.687 Assassins[36797:70b] [D] -[UAirship configureUserAgent] [Line 311] Setting User-Agent for UA requests to Assassins 1.0 (iPhone Simulator; iPhone OS 7.1; UALib 3.0.3; bSTj3n-LSE-w4hh-edGaIQ; en_US)
+2014-04-11 21:17:52.688 Assassins[36797:70b] [D] void PrintReachabilityFlags(SCNetworkReachabilityFlags, const char *) [Line 79] Reachability Flag Status: -R -----l- networkStatusForFlags
+2014-04-11 21:17:52.689 Assassins[36797:70b] [I] +[UAirship executeUnsafeTakeOff:] [Line 190] Registering UAURLProtocol
+2014-04-11 21:17:52.691 Assassins[36797:70b] [D] -[UALocationService startReportingSignificantLocationChanges] [Line 311] Attempt to start significant change service
+2014-04-11 21:17:52.695 Assassins[36797:70b] [D] -[UALocationService startReportingLocationWithProvider:] [Line 480] Location service not authorized or not enabled
+2014-04-11 21:17:52.695 Assassins[36797:70b] [CDVTimer][pushnotificationplugin] 10.177016ms
+2014-04-11 21:17:52.695 Assassins[36797:70b] [CDVTimer][TotalPluginStartup] 10.476053ms
+2014-04-11 21:17:52.711 Assassins[36797:70b] [D] -[UAStandardLocationProvider locationManager:didChangeAuthorizationStatus:] [Line 54] Standard location authorization changed 0
+2014-04-11 21:17:52.711 Assassins[36797:70b] [D] -[UALocationService locationProvider:withLocationManager:didChangeAuthorizationStatus:] [Line 224] Location service did change authorization status 0
+2014-04-11 21:17:52.712 Assassins[36797:70b] [D] -[UASignificantChangeProvider locationManager:didChangeAuthorizationStatus:] [Line 51] Significant change did change authorization status 0
+2014-04-11 21:17:52.712 Assassins[36797:70b] [D] -[UALocationService locationProvider:withLocationManager:didChangeAuthorizationStatus:] [Line 224] Location service did change authorization status 0
+2014-04-11 21:17:52.740 Assassins[36797:70b] Resetting plugins due to page load.
+2014-04-11 21:17:57.343 Assassins[36797:70b] [D] -[UALocationService appDidEnterBackground] [Line 127] Location service did enter background
+2014-04-11 21:17:57.730 Assassins[36797:70b] [D] -[UALocationService appWillEnterForeground] [Line 117] Location service did receive appWillEnterForeground
+2014-04-11 21:17:57.730 Assassins[36797:70b] [D] -[UALocationService restartPreviousLocationServices] [Line 105] Restarting location providers that were previously running
+2014-04-11 21:17:57.730 Assassins[36797:70b] [D] void PrintReachabilityFlags(SCNetworkReachabilityFlags, const char *) [Line 79] Reachability Flag Status: -R -----l- networkStatusForFlags
+2014-04-11 21:17:57.731 Assassins[36797:70b] [D] -[UAPush updateRegistrationForcefully:] [Line 596] Device token is nil, unregistering with Urban Airship not possible. It is likely the app is already unregistered
+2014-04-11 21:18:00.050 Assassins[36797:70b] Finished load of: file:///Users/jberlinsky/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/FFCC0B70-6189-4A8A-86CC-2813629D2543/Assassins.app/www/index.html
+2014-04-11 21:18:07.691 Assassins[36797:e03] [D] +[UAKeychainUtils getDeviceID] [Line 238] Retrieved device id info from keychain.
+2014-04-11 21:18:07.691 Assassins[36797:e03] [D] +[UAKeychainUtils getDeviceID] [Line 245] Loaded Device ID: 11CCE3C8-FCEF-4ED1-BDE3-663254762D4A
+2014-04-11 21:18:07.691 Assassins[36797:e03] [D] +[UAKeychainUtils getDeviceID] [Line 246] Loaded Model Name: x86_64
+2014-04-11 21:18:07.803 Assassins[36797:70b] [D] __39-[UAAnalytics sendOperationWithEvents:]_block_invoke [Line 622] Analytics data sent successfully. Status: 200
+2014-04-11 21:18:33.394 Assassins[37350:70b] Multi-tasking -> Device: YES, App: YES
+2014-04-11 21:18:33.400 Assassins[37350:70b] Unlimited access to network resources
+2014-04-11 21:18:33.414 Assassins[37350:70b] [I] +[UAirship executeUnsafeTakeOff:] [Line 145] App Key: bSTj3n-LSE-w4hh-edGaIQ
+2014-04-11 21:18:33.414 Assassins[37350:70b] [I] +[UAirship executeUnsafeTakeOff:] [Line 146] App Secret: e7kO4AV3TwWdkAVOAT9P9A
+2014-04-11 21:18:33.415 Assassins[37350:70b] [I] +[UAirship executeUnsafeTakeOff:] [Line 147] Server: https://device-api.urbanairship.com
+2014-04-11 21:18:33.415 Assassins[37350:70b] [D] -[UAirship configureUserAgent] [Line 311] Setting User-Agent for UA requests to Assassins 1.0 (iPhone Simulator; iPhone OS 7.1; UALib 3.0.3; bSTj3n-LSE-w4hh-edGaIQ; en_US)
+2014-04-11 21:18:33.418 Assassins[37350:70b] [D] void PrintReachabilityFlags(SCNetworkReachabilityFlags, const char *) [Line 79] Reachability Flag Status: -R -----l- networkStatusForFlags
+2014-04-11 21:18:33.419 Assassins[37350:70b] [I] +[UAirship executeUnsafeTakeOff:] [Line 190] Registering UAURLProtocol
+2014-04-11 21:18:33.422 Assassins[37350:70b] [D] -[UALocationService startReportingSignificantLocationChanges] [Line 311] Attempt to start significant change service
+2014-04-11 21:18:33.426 Assassins[37350:70b] [D] -[UALocationService startReportingLocationWithProvider:] [Line 480] Location service not authorized or not enabled
+2014-04-11 21:18:33.426 Assassins[37350:70b] [CDVTimer][pushnotificationplugin] 12.619019ms
+2014-04-11 21:18:33.426 Assassins[37350:70b] [CDVTimer][TotalPluginStartup] 12.907028ms
+2014-04-11 21:18:33.458 Assassins[37350:70b] [D] -[UASignificantChangeProvider locationManager:didChangeAuthorizationStatus:] [Line 51] Significant change did change authorization status 0
+2014-04-11 21:18:33.458 Assassins[37350:70b] [D] -[UALocationService locationProvider:withLocationManager:didChangeAuthorizationStatus:] [Line 224] Location service did change authorization status 0
+2014-04-11 21:18:33.458 Assassins[37350:70b] [D] -[UAStandardLocationProvider locationManager:didChangeAuthorizationStatus:] [Line 54] Standard location authorization changed 0
+2014-04-11 21:18:33.459 Assassins[37350:70b] [D] -[UALocationService locationProvider:withLocationManager:didChangeAuthorizationStatus:] [Line 224] Location service did change authorization status 0
+2014-04-11 21:18:33.491 Assassins[37350:70b] Resetting plugins due to page load.
+2014-04-11 21:18:36.743 Assassins[37350:70b] [D] -[UALocationService appDidEnterBackground] [Line 127] Location service did enter background
+2014-04-11 21:18:37.788 Assassins[37350:70b] [D] -[UALocationService appWillEnterForeground] [Line 117] Location service did receive appWillEnterForeground
+2014-04-11 21:18:37.789 Assassins[37350:70b] [D] -[UALocationService restartPreviousLocationServices] [Line 105] Restarting location providers that were previously running
+2014-04-11 21:18:37.789 Assassins[37350:70b] [D] void PrintReachabilityFlags(SCNetworkReachabilityFlags, const char *) [Line 79] Reachability Flag Status: -R -----l- networkStatusForFlags
+2014-04-11 21:18:37.790 Assassins[37350:70b] [D] -[UAPush updateRegistrationForcefully:] [Line 596] Device token is nil, unregistering with Urban Airship not possible. It is likely the app is already unregistered
+2014-04-11 21:18:43.455 Assassins[37350:70b] Finished load of: file:///Users/jberlinsky/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/FFCC0B70-6189-4A8A-86CC-2813629D2543/Assassins.app/www/index.html
+2014-04-11 21:18:58.624 Assassins[37722:70b] Multi-tasking -> Device: YES, App: YES
+2014-04-11 21:18:58.630 Assassins[37722:70b] Unlimited access to network resources
+2014-04-11 21:18:58.644 Assassins[37722:70b] [I] +[UAirship executeUnsafeTakeOff:] [Line 145] App Key: bSTj3n-LSE-w4hh-edGaIQ
+2014-04-11 21:18:58.644 Assassins[37722:70b] [I] +[UAirship executeUnsafeTakeOff:] [Line 146] App Secret: e7kO4AV3TwWdkAVOAT9P9A
+2014-04-11 21:18:58.645 Assassins[37722:70b] [I] +[UAirship executeUnsafeTakeOff:] [Line 147] Server: https://device-api.urbanairship.com
+2014-04-11 21:18:58.645 Assassins[37722:70b] [D] -[UAirship configureUserAgent] [Line 311] Setting User-Agent for UA requests to Assassins 1.0 (iPhone Simulator; iPhone OS 7.1; UALib 3.0.3; bSTj3n-LSE-w4hh-edGaIQ; en_US)
+2014-04-11 21:18:58.646 Assassins[37722:70b] [D] void PrintReachabilityFlags(SCNetworkReachabilityFlags, const char *) [Line 79] Reachability Flag Status: -R -----l- networkStatusForFlags
+2014-04-11 21:18:58.647 Assassins[37722:70b] [I] +[UAirship executeUnsafeTakeOff:] [Line 190] Registering UAURLProtocol
+2014-04-11 21:18:58.649 Assassins[37722:70b] [D] -[UALocationService startReportingSignificantLocationChanges] [Line 311] Attempt to start significant change service
+2014-04-11 21:18:58.653 Assassins[37722:70b] [D] -[UALocationService startReportingLocationWithProvider:] [Line 480] Location service not authorized or not enabled
+2014-04-11 21:18:58.653 Assassins[37722:70b] [CDVTimer][pushnotificationplugin] 9.808004ms
+2014-04-11 21:18:58.654 Assassins[37722:70b] [CDVTimer][TotalPluginStartup] 10.127008ms
+2014-04-11 21:18:58.669 Assassins[37722:70b] [D] -[UASignificantChangeProvider locationManager:didChangeAuthorizationStatus:] [Line 51] Significant change did change authorization status 0
+2014-04-11 21:18:58.670 Assassins[37722:70b] [D] -[UALocationService locationProvider:withLocationManager:didChangeAuthorizationStatus:] [Line 224] Location service did change authorization status 0
+2014-04-11 21:18:58.670 Assassins[37722:70b] [D] -[UAStandardLocationProvider locationManager:didChangeAuthorizationStatus:] [Line 54] Standard location authorization changed 0
+2014-04-11 21:18:58.670 Assassins[37722:70b] [D] -[UALocationService locationProvider:withLocationManager:didChangeAuthorizationStatus:] [Line 224] Location service did change authorization status 0
+2014-04-11 21:18:58.695 Assassins[37722:70b] Resetting plugins due to page load.
+2014-04-11 21:19:00.848 Assassins[37722:70b] [D] -[UALocationService appDidEnterBackground] [Line 127] Location service did enter background
+2014-04-11 21:19:01.111 Assassins[37722:70b] [D] -[UALocationService appWillEnterForeground] [Line 117] Location service did receive appWillEnterForeground
+2014-04-11 21:19:01.111 Assassins[37722:70b] [D] -[UALocationService restartPreviousLocationServices] [Line 105] Restarting location providers that were previously running
+2014-04-11 21:19:01.112 Assassins[37722:70b] [D] void PrintReachabilityFlags(SCNetworkReachabilityFlags, const char *) [Line 79] Reachability Flag Status: -R -----l- networkStatusForFlags
+2014-04-11 21:19:01.113 Assassins[37722:70b] [D] -[UAPush updateRegistrationForcefully:] [Line 596] Device token is nil, unregistering with Urban Airship not possible. It is likely the app is already unregistered
+2014-04-11 21:19:06.623 Assassins[37722:70b] Finished load of: file:///Users/jberlinsky/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/FFCC0B70-6189-4A8A-86CC-2813629D2543/Assassins.app/www/index.html
+2014-04-11 21:19:22.650 Assassins[37722:e03] [D] +[UAKeychainUtils getDeviceID] [Line 238] Retrieved device id info from keychain.
+2014-04-11 21:19:22.650 Assassins[37722:e03] [D] +[UAKeychainUtils getDeviceID] [Line 245] Loaded Device ID: 11CCE3C8-FCEF-4ED1-BDE3-663254762D4A
+2014-04-11 21:19:22.650 Assassins[37722:e03] [D] +[UAKeychainUtils getDeviceID] [Line 246] Loaded Model Name: x86_64
+2014-04-11 21:19:22.771 Assassins[37722:70b] [D] __39-[UAAnalytics sendOperationWithEvents:]_block_invoke [Line 622] Analytics data sent successfully. Status: 200
+2014-04-11 21:19:25.590 Assassins[38115:70b] Multi-tasking -> Device: YES, App: YES
+2014-04-11 21:19:25.597 Assassins[38115:70b] Unlimited access to network resources
+2014-04-11 21:19:25.614 Assassins[38115:70b] [I] +[UAirship executeUnsafeTakeOff:] [Line 145] App Key: bSTj3n-LSE-w4hh-edGaIQ
+2014-04-11 21:19:25.615 Assassins[38115:70b] [I] +[UAirship executeUnsafeTakeOff:] [Line 146] App Secret: e7kO4AV3TwWdkAVOAT9P9A
+2014-04-11 21:19:25.615 Assassins[38115:70b] [I] +[UAirship executeUnsafeTakeOff:] [Line 147] Server: https://device-api.urbanairship.com
+2014-04-11 21:19:25.616 Assassins[38115:70b] [D] -[UAirship configureUserAgent] [Line 311] Setting User-Agent for UA requests to Assassins 1.0 (iPhone Simulator; iPhone OS 7.1; UALib 3.0.3; bSTj3n-LSE-w4hh-edGaIQ; en_US)
+2014-04-11 21:19:25.617 Assassins[38115:70b] [D] void PrintReachabilityFlags(SCNetworkReachabilityFlags, const char *) [Line 79] Reachability Flag Status: -R -----l- networkStatusForFlags
+2014-04-11 21:19:25.618 Assassins[38115:70b] [I] +[UAirship executeUnsafeTakeOff:] [Line 190] Registering UAURLProtocol
+2014-04-11 21:19:25.620 Assassins[38115:70b] [D] -[UALocationService startReportingSignificantLocationChanges] [Line 311] Attempt to start significant change service
+2014-04-11 21:19:25.624 Assassins[38115:70b] [D] -[UALocationService startReportingLocationWithProvider:] [Line 480] Location service not authorized or not enabled
+2014-04-11 21:19:25.624 Assassins[38115:70b] [CDVTimer][pushnotificationplugin] 10.613978ms
+2014-04-11 21:19:25.624 Assassins[38115:70b] [CDVTimer][TotalPluginStartup] 10.924995ms
+2014-04-11 21:19:25.639 Assassins[38115:70b] [D] -[UAStandardLocationProvider locationManager:didChangeAuthorizationStatus:] [Line 54] Standard location authorization changed 0
+2014-04-11 21:19:25.639 Assassins[38115:70b] [D] -[UALocationService locationProvider:withLocationManager:didChangeAuthorizationStatus:] [Line 224] Location service did change authorization status 0
+2014-04-11 21:19:25.640 Assassins[38115:70b] [D] -[UASignificantChangeProvider locationManager:didChangeAuthorizationStatus:] [Line 51] Significant change did change authorization status 0
+2014-04-11 21:19:25.640 Assassins[38115:70b] [D] -[UALocationService locationProvider:withLocationManager:didChangeAuthorizationStatus:] [Line 224] Location service did change authorization status 0
+2014-04-11 21:19:25.661 Assassins[38115:70b] Resetting plugins due to page load.
+2014-04-11 21:19:30.324 Assassins[38115:70b] [D] -[UALocationService appDidEnterBackground] [Line 127] Location service did enter background
+2014-04-11 21:19:30.623 Assassins[38115:70b] [D] -[UALocationService appWillEnterForeground] [Line 117] Location service did receive appWillEnterForeground
+2014-04-11 21:19:30.624 Assassins[38115:70b] [D] -[UALocationService restartPreviousLocationServices] [Line 105] Restarting location providers that were previously running
+2014-04-11 21:19:30.624 Assassins[38115:70b] [D] void PrintReachabilityFlags(SCNetworkReachabilityFlags, const char *) [Line 79] Reachability Flag Status: -R -----l- networkStatusForFlags
+2014-04-11 21:19:30.625 Assassins[38115:70b] [D] -[UAPush updateRegistrationForcefully:] [Line 596] Device token is nil, unregistering with Urban Airship not possible. It is likely the app is already unregistered
+2014-04-11 21:19:37.948 Assassins[38115:70b] Finished load of: file:///Users/jberlinsky/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/FFCC0B70-6189-4A8A-86CC-2813629D2543/Assassins.app/www/index.html
+2014-04-11 21:19:40.620 Assassins[38115:e03] [D] +[UAKeychainUtils getDeviceID] [Line 238] Retrieved device id info from keychain.
+2014-04-11 21:19:40.620 Assassins[38115:e03] [D] +[UAKeychainUtils getDeviceID] [Line 245] Loaded Device ID: 11CCE3C8-FCEF-4ED1-BDE3-663254762D4A
+2014-04-11 21:19:40.620 Assassins[38115:e03] [D] +[UAKeychainUtils getDeviceID] [Line 246] Loaded Model Name: x86_64
+2014-04-11 21:19:40.734 Assassins[38115:70b] [D] __39-[UAAnalytics sendOperationWithEvents:]_block_invoke [Line 622] Analytics data sent successfully. Status: 200

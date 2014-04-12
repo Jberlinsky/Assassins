@@ -19,6 +19,13 @@
     <feature name="LocalStorage">
         <param name="ios-package" value="CDVLocalStorage" />
     </feature>
+    <feature name="Device">
+        <param name="ios-package" value="CDVDevice" />
+    </feature>
+    <feature name="PushNotificationPlugin">
+        <param name="ios-package" value="PushNotificationPlugin" />
+        <param name="onload" value="true" />
+    </feature>
     <name>Assassins</name>
     <description>
         A sample Apache Cordova application that responds to the deviceready event.
@@ -28,4 +35,14 @@
     </author>
     <content src="index.html" />
     <access origin="*" />
+    <preference name="com.urbanairship.production_app_key" value="8aV5ozlxQBiqYKAgseAoXw" />
+    <preference name="com.urbanairship.production_app_secret" value="6owihkuHRB-WEyeaazZv1Q" />
+    <preference name="com.urbanairship.development_app_key" value="bSTj3n-LSE-w4hh-edGaIQ" />
+    <preference name="com.urbanairship.development_app_secret" value="e7kO4AV3TwWdkAVOAT9P9A" />
+    <preference name="com.urbanairship.in_production" value="false" />
+    <preference name="com.urbanairship.gcm_sender" value="1072244305575" />
+    <preference name="LoadingDialog" value="Loading,Please wait" />
+    <preference name="LogLevel" value="VERBOSE" />
+    <preference name="SetFullscreen" value="true" />
+    <preference name="KeepRunning" value="true" />
 </widget>
