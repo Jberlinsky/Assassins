@@ -1,14 +1,23 @@
-/Users/nwkotto/Desktop/assassin/platforms/android/ant-gen/com/ionicframework/starter/R.java \
- : /Users/nwkotto/Desktop/assassin/platforms/android/res/drawable/icon.png \
-/Users/nwkotto/Desktop/assassin/platforms/android/res/drawable-hdpi/icon.png \
-/Users/nwkotto/Desktop/assassin/platforms/android/res/drawable-ldpi/icon.png \
-/Users/nwkotto/Desktop/assassin/platforms/android/res/drawable-mdpi/icon.png \
-/Users/nwkotto/Desktop/assassin/platforms/android/res/drawable-xhdpi/icon.png \
-/Users/nwkotto/Desktop/assassin/platforms/android/res/values/strings.xml \
-/Users/nwkotto/Desktop/assassin/platforms/android/res/xml/config.xml \
-/Users/nwkotto/Desktop/assassin/platforms/android/ant-build/res/drawable/icon.png \
-/Users/nwkotto/Desktop/assassin/platforms/android/ant-build/res/drawable-hdpi/icon.png \
-/Users/nwkotto/Desktop/assassin/platforms/android/ant-build/res/drawable-ldpi/icon.png \
-/Users/nwkotto/Desktop/assassin/platforms/android/ant-build/res/drawable-mdpi/icon.png \
-/Users/nwkotto/Desktop/assassin/platforms/android/ant-build/res/drawable-xhdpi/icon.png \
-/Users/nwkotto/Desktop/assassin/platforms/android/ant-build/AndroidManifest.xml \
+/Users/jberlinsky/workspace/assassins/platforms/android/ant-gen/com/ionicframework/starter/R.java \
+ : /Users/jberlinsky/workspace/assassins/platforms/android/res/drawable/icon.png \
+/Users/jberlinsky/workspace/assassins/platforms/android/res/drawable-hdpi/icon.png \
+/Users/jberlinsky/workspace/assassins/platforms/android/res/drawable-ldpi/icon.png \
+/Users/jberlinsky/workspace/assassins/platforms/android/res/drawable-mdpi/icon.png \
+/Users/jberlinsky/workspace/assassins/platforms/android/res/drawable-xhdpi/icon.png \
+/Users/jberlinsky/workspace/assassins/platforms/android/res/raw/beep.wav \
+/Users/jberlinsky/workspace/assassins/platforms/android/res/raw/flashlight_turn_off_icon.png \
+/Users/jberlinsky/workspace/assassins/platforms/android/res/raw/flashlight_turn_on_icon.png \
+/Users/jberlinsky/workspace/assassins/platforms/android/res/raw/ic_btn_search.png \
+/Users/jberlinsky/workspace/assassins/platforms/android/res/raw/poweredby2x.png \
+/Users/jberlinsky/workspace/assassins/platforms/android/res/values/strings.xml \
+/Users/jberlinsky/workspace/assassins/platforms/android/res/xml/config.xml \
+/Users/jberlinsky/workspace/assassins/platforms/android/ant-build/res/drawable/icon.png \
+/Users/jberlinsky/workspace/assassins/platforms/android/ant-build/res/drawable-hdpi/icon.png \
+/Users/jberlinsky/workspace/assassins/platforms/android/ant-build/res/drawable-ldpi/icon.png \
+/Users/jberlinsky/workspace/assassins/platforms/android/ant-build/res/drawable-mdpi/icon.png \
+/Users/jberlinsky/workspace/assassins/platforms/android/ant-build/res/drawable-xhdpi/icon.png \
+/Users/jberlinsky/workspace/assassins/platforms/android/ant-build/res/raw/flashlight_turn_off_icon.png \
+/Users/jberlinsky/workspace/assassins/platforms/android/ant-build/res/raw/flashlight_turn_on_icon.png \
+/Users/jberlinsky/workspace/assassins/platforms/android/ant-build/res/raw/ic_btn_search.png \
+/Users/jberlinsky/workspace/assassins/platforms/android/ant-build/res/raw/poweredby2x.png \
+/Users/jberlinsky/workspace/assassins/platforms/android/ant-build/AndroidManifest.xml \
