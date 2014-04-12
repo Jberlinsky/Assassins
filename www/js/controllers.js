@@ -54,7 +54,7 @@ angular.module('assassin.controllers', [])
       } else if ($scope.i_am_killable) {
         // Display kill button
         // When the button is clicked, execute kill_user on THAT PHONE's user as the target, and OUR PHONE's user as the user_id
-        $('#kill_button').show()
+        // TODO AIDEN show the kill screen
         $('#kill_button').on('click', function(e) {
           // TODO AIDEN killUser
           // TODO show that the user has been killed
