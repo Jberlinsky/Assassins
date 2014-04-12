@@ -54,6 +54,11 @@ angular.module('assassin.controllers', [])
       } else if ($scope.i_am_killable) {
         // Display kill button
         // When the button is clicked, execute kill_user on THAT PHONE's user as the target, and OUR PHONE's user as the user_id
+        $('#kill_button').show()
+        $('#kill_button').on('click', function(e) {
+          // TODO AIDEN killUser
+          // TODO show that the user has been killed
+        });
       } else if (window.app_state == 'broken') {
         // Go in for the kill
         enableKillBetween($rootScope.auth.user.id, $scope.target.id);
