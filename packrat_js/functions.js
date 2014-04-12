@@ -22,14 +22,16 @@ function getPwChar(id){
   var targetRef = users.child(id);
   targetRef.once('value', function(snapshot){
     var target = snapshot.val();
-    var i = getRandomInt(0, target.pw_remaining.length);
-    target.pw_cracked = target.pw_cracked + target.pw_remaining.charAt(i);
-    target.pw_remaining = target.pw_remaining.substring(0, i) + target.pw_remaining.substring(i+1);
-    for(key in target){
-      console.log(key + ": " + target[key] + "|");
-      console.log("   ");
+    if (target.pw_remaining.length > 0) {
+      var i = getRandomInt(0, target.pw_remaining.length);
+      target.pw_cracked = target.pw_cracked + target.pw_remaining.charAt(i);
+      target.pw_remaining = target.pw_remaining.substring(0, i) + target.pw_remaining.substring(i+1);
+      for(key in target){
+        console.log(key + ": " + target[key] + "|");
+        console.log("   ");
+      }
+      targetRef.set(target);
     }
-    targetRef.set(target);
   });
 }
 
