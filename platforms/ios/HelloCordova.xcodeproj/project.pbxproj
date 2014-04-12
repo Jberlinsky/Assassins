@@ -58,6 +58,8 @@
 		6D22FC6E2F0E43609E3D9F2E /* CDVNotification.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 794096A6F4B34A6399857565 /* CDVNotification.bundle */; };
 		AB4EA814D8C045F980AABC91 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F44BCE693B304A418650E13C /* AudioToolbox.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		728087A81D6343E2966D8532 /* CDVVibration.m in Sources */ = {isa = PBXBuildFile; fileRef = 1486364988E547229529DF03 /* CDVVibration.m */; };
+		C39E82365BF34B1DA70C7608 /* BluetoothLePlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 1390303B79214B1AA7FB16A6 /* BluetoothLePlugin.m */; };
+		41808D7074D54FA1A71C7AE3 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50BD6ABEB36F4F3FA6ADFF35 /* CoreBluetooth.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -158,6 +160,9 @@
 		F44BCE693B304A418650E13C /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "AudioToolbox.framework"; path = "System/Library/Frameworks/AudioToolbox.framework"; sourceTree = SDKROOT; fileEncoding = 4; };
 		1486364988E547229529DF03 /* CDVVibration.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "CDVVibration.m"; path = "org.apache.cordova.vibration/CDVVibration.m"; sourceTree = "<group>"; fileEncoding = 4; };
 		D0A1C60DF93E4421807C3C56 /* CDVVibration.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CDVVibration.h"; path = "org.apache.cordova.vibration/CDVVibration.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		1390303B79214B1AA7FB16A6 /* BluetoothLePlugin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "BluetoothLePlugin.m"; path = "com.randdusing.bluetoothle/BluetoothLePlugin.m"; sourceTree = "<group>"; fileEncoding = 4; };
+		8337971D2D724DABACFF590C /* BluetoothLePlugin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "BluetoothLePlugin.h"; path = "com.randdusing.bluetoothle/BluetoothLePlugin.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		50BD6ABEB36F4F3FA6ADFF35 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "CoreBluetooth.framework"; path = "System/Library/Frameworks/CoreBluetooth.framework"; sourceTree = SDKROOT; fileEncoding = 4; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,6 +178,7 @@
 				D849EBE873664B69BD94D70C /* CoreMotion.framework in Frameworks */,
 				EB2A256C76214F7E8A1C48BC /* ImageIO.framework in Frameworks */,
 				AB4EA814D8C045F980AABC91 /* AudioToolbox.framework in Frameworks */,
+				41808D7074D54FA1A71C7AE3 /* CoreBluetooth.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,6 +277,7 @@
 				BCD2686BA5B14CA3A6C5A7F4 /* CoreMotion.framework */,
 				A366F49386E443A5934EE5EE /* ImageIO.framework */,
 				F44BCE693B304A418650E13C /* AudioToolbox.framework */,
+				50BD6ABEB36F4F3FA6ADFF35 /* CoreBluetooth.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -317,6 +324,8 @@
 				75820430414A4535AED959C9 /* CDVNotification.h */,
 				1486364988E547229529DF03 /* CDVVibration.m */,
 				D0A1C60DF93E4421807C3C56 /* CDVVibration.h */,
+				1390303B79214B1AA7FB16A6 /* BluetoothLePlugin.m */,
+				8337971D2D724DABACFF590C /* BluetoothLePlugin.h */,
 			);
 			name = Plugins;
 			path = "HelloCordova/Plugins";
@@ -528,6 +537,7 @@
 				24DD29DE9505472D913D402A /* CDVSound.m in Sources */,
 				4A2F6ADFBA614DC3BBB8F7A5 /* CDVNotification.m in Sources */,
 				728087A81D6343E2966D8532 /* CDVVibration.m in Sources */,
+				C39E82365BF34B1DA70C7608 /* BluetoothLePlugin.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

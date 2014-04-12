@@ -313,3 +313,33 @@ libc++abi.dylib: terminating with uncaught exception of type NSException
 2014-04-11 21:19:40.620 Assassins[38115:e03] [D] +[UAKeychainUtils getDeviceID] [Line 245] Loaded Device ID: 11CCE3C8-FCEF-4ED1-BDE3-663254762D4A
 2014-04-11 21:19:40.620 Assassins[38115:e03] [D] +[UAKeychainUtils getDeviceID] [Line 246] Loaded Model Name: x86_64
 2014-04-11 21:19:40.734 Assassins[38115:70b] [D] __39-[UAAnalytics sendOperationWithEvents:]_block_invoke [Line 622] Analytics data sent successfully. Status: 200
+2014-04-12 01:11:36.742 HelloCordova[81367:70b] Multi-tasking -> Device: YES, App: YES
+2014-04-12 01:11:36.748 HelloCordova[81367:70b] Unlimited access to network resources
+2014-04-12 01:11:36.763 HelloCordova[81367:70b] [CDVTimer][file] 0.429988ms
+2014-04-12 01:11:36.782 HelloCordova[81367:70b] [CDVTimer][statusbar] 18.545985ms
+2014-04-12 01:11:36.783 HelloCordova[81367:70b] [CDVTimer][TotalPluginStartup] 19.923031ms
+2014-04-12 01:11:36.854 Assassins[38115:70b] [D] -[UALocationService appDidEnterBackground] [Line 127] Location service did enter background
+2014-04-12 01:11:36.879 HelloCordova[81367:70b] Resetting plugins due to page load.
+2014-04-12 01:11:37.034 Assassins[38115:70b] [D] __39-[UAAnalytics sendOperationWithEvents:]_block_invoke [Line 622] Analytics data sent successfully. Status: 200
+2014-04-12 01:11:37.094 HelloCordova[81367:70b] Finished load of: file:///Users/jberlinsky/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/70087BCA-28F5-4375-9D76-C6F44CA0ECA7/HelloCordova.app/www/index.html#/tab/target
+2014-04-12 01:13:21.620 HelloCordova[82901:70b] Multi-tasking -> Device: YES, App: YES
+2014-04-12 01:13:21.626 HelloCordova[82901:70b] Unlimited access to network resources
+2014-04-12 01:13:21.641 HelloCordova[82901:70b] [CDVTimer][file] 0.725985ms
+2014-04-12 01:13:21.648 HelloCordova[82901:70b] [CDVTimer][statusbar] 6.651998ms
+2014-04-12 01:13:21.649 HelloCordova[82901:70b] [CDVTimer][TotalPluginStartup] 8.185983ms
+2014-04-12 01:13:21.674 HelloCordova[82901:70b] Resetting plugins due to page load.
+2014-04-12 01:13:21.838 HelloCordova[82901:70b] Finished load of: file:///Users/jberlinsky/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/70087BCA-28F5-4375-9D76-C6F44CA0ECA7/HelloCordova.app/www/index.html#/tab/target
+2014-04-12 01:14:51.838 HelloCordova[84221:70b] Multi-tasking -> Device: YES, App: YES
+2014-04-12 01:14:51.844 HelloCordova[84221:70b] Unlimited access to network resources
+2014-04-12 01:14:51.858 HelloCordova[84221:70b] [CDVTimer][file] 0.465989ms
+2014-04-12 01:14:51.865 HelloCordova[84221:70b] [CDVTimer][statusbar] 6.222963ms
+2014-04-12 01:14:51.865 HelloCordova[84221:70b] [CDVTimer][TotalPluginStartup] 7.483006ms
+2014-04-12 01:14:51.935 HelloCordova[84221:70b] Resetting plugins due to page load.
+2014-04-12 01:14:52.098 HelloCordova[84221:70b] Finished load of: file:///Users/jberlinsky/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/70087BCA-28F5-4375-9D76-C6F44CA0ECA7/HelloCordova.app/www/index.html#/tab/target
+2014-04-12 01:20:22.272 HelloCordova[88366:70b] Multi-tasking -> Device: YES, App: YES
+2014-04-12 01:20:22.278 HelloCordova[88366:70b] Unlimited access to network resources
+2014-04-12 01:20:22.294 HelloCordova[88366:70b] [CDVTimer][file] 0.460982ms
+2014-04-12 01:20:22.304 HelloCordova[88366:70b] [CDVTimer][statusbar] 10.168016ms
+2014-04-12 01:20:22.305 HelloCordova[88366:70b] [CDVTimer][TotalPluginStartup] 11.467040ms
+2014-04-12 01:20:22.421 HelloCordova[88366:70b] Resetting plugins due to page load.
+2014-04-12 01:20:22.599 HelloCordova[88366:70b] Finished load of: file:///Users/jberlinsky/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/70087BCA-28F5-4375-9D76-C6F44CA0ECA7/HelloCordova.app/www/index.html#/tab/target

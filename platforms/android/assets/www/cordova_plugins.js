@@ -190,6 +190,13 @@ module.exports = [
         ]
     },
     {
+        "file": "plugins/com.randdusing.bluetoothle/www/bluetoothle.js",
+        "id": "com.randdusing.bluetoothle.BluetoothLe",
+        "clobbers": [
+            "window.bluetoothle"
+        ]
+    },
+    {
         "file": "plugins/org.apache.cordova.file/www/DirectoryEntry.js",
         "id": "org.apache.cordova.file.DirectoryEntry",
         "clobbers": [
@@ -333,6 +340,7 @@ module.exports.metadata =
     "org.apache.cordova.media": "0.2.9",
     "org.apache.cordova.dialogs": "0.2.6",
     "org.apache.cordova.vibration": "0.3.7",
+    "com.randdusing.bluetoothle": "1.0.0",
     "org.apache.cordova.file": "1.0.1"
 }
 // BOTTOM OF METADATA

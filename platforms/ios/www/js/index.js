@@ -27,7 +27,6 @@ var app = {
     // 'load', 'deviceready', 'offline', and 'online'.
     bindEvents: function() {
         document.addEventListener('deviceready', this.onDeviceReady, false);
-        PushNotifications.initialize();
     },
     // deviceready Event Handler
     //
@@ -36,6 +35,7 @@ var app = {
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
     },
+
     // Update DOM on a Received Event
     receivedEvent: function(id) {
         var parentElement = document.getElementById(id);

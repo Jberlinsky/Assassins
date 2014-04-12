@@ -1,11 +1,11 @@
 // Ionic Starter App
 
 // angular.module is a global place for creating, registering and retrieving Angular modules
-// 'starter' is the name of this angular module example (also set in a <body> attribute in index.html)
+// 'assassin' is the name of this angular module example (also set in a <body> attribute in index.html)
 // the 2nd parameter is an array of 'requires'
-// 'starter.services' is found in services.js
-// 'starter.controllers' is found in controllers.js
-angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
+// 'assassin.services' is found in services.js
+// 'assassin.controllers' is found in controllers.js
+angular.module('assassin', ['ionic', 'assassin.controllers', 'assassin.services', 'firebase'])
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
@@ -24,6 +24,13 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
   // Each state's controller can be found in controllers.js
   $stateProvider
 
+    // Each tab has its own nav history stack:
+    .state('login', {
+      url: '/login',
+      templateUrl: 'templates/login.html',
+      controller: 'LoginCtrl'
+    })
+
     // setup an abstract state for the tabs directive
     .state('tab', {
       url: "/tab",
@@ -31,49 +38,28 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       templateUrl: "templates/tabs.html"
     })
 
-    // Each tab has its own nav history stack:
-
-    .state('tab.dash', {
-      url: '/dash',
+    .state('tab.target', {
+      url: '/target',
       views: {
-        'tab-dash': {
-          templateUrl: 'templates/tab-dash.html',
-          controller: 'DashCtrl'
+        'tab-target': {
+          templateUrl: 'templates/target.html',
+          controller: 'TargetCtrl'
         }
       }
     })
 
-    .state('tab.friends', {
-      url: '/friends',
+    .state('tab.profile', {
+      url: '/profile',
       views: {
-        'tab-friends': {
-          templateUrl: 'templates/tab-friends.html',
-          controller: 'FriendsCtrl'
-        }
-      }
-    })
-    .state('tab.friend-detail', {
-      url: '/friend/:friendId',
-      views: {
-        'tab-friends': {
-          templateUrl: 'templates/friend-detail.html',
-          controller: 'FriendDetailCtrl'
-        }
-      }
-    })
-
-    .state('tab.account', {
-      url: '/account',
-      views: {
-        'tab-account': {
-          templateUrl: 'templates/tab-account.html',
-          controller: 'AccountCtrl'
+        'tab-profile': {
+          templateUrl: 'templates/profile.html',
+          controller: 'ProfileCtrl'
         }
       }
     })
 
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/tab/dash');
+  $urlRouterProvider.otherwise('/tab/target');
 
 });
 
