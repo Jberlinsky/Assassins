@@ -99,3 +99,16 @@ function findUserInRange(user_id, successCallback) {
   // TODO: Find user in decrypt range. If multiple, return only one.
   // Call successCallback(found_user);
 }
+
+function guessPw(target_id, guess){
+    var targetRef = users.child(user_id);
+    targetRef.once('value', function(snapshot){
+	var target = snapshot.val();
+	if(guess === target.password){
+	    target.pw_compromised = true;
+	    return true;
+	}else{
+	    return false;
+	}
+    });
+}
