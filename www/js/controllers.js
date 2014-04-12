@@ -56,7 +56,7 @@ angular.module('assassin.controllers', [])
         // When the button is clicked, execute kill_user on THAT PHONE's user as the target, and OUR PHONE's user as the user_id
         // TODO AIDEN show the kill screen
         $('#kill_button').on('click', function(e) {
-          // TODO AIDEN killUser
+          self_kill($rootScope.auth.user.id);
           // TODO show that the user has been killed
         });
       } else if (window.app_state == 'broken') {
