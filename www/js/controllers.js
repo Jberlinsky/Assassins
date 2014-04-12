@@ -39,6 +39,7 @@ angular.module('assassin.controllers', [])
       updateLocation($rootScope.auth.user.id, position);
       if (window.app_state === undefined) { window.app_state = 'seeking'; }
       if (window.app_state == 'seeking') {
+        $scope.hack_btn = "img/hack_btn_base.png"
         // Look for nearby users to decrypt
         findTargetInRange($rootScope.auth.user.id, $scope.target.id, position.coords, function(target) {
           // Start decrypting
@@ -47,11 +48,13 @@ angular.module('assassin.controllers', [])
           window.setTimeout(decryptOneCharacter, N_SEC * 1000);
         });
       } else if (window.app_state == 'decrypting') {
+        $scope.hack_btn = "img/hack_btn_ready.png"
         // Every N seconds, decrypt one character
         if ($scope.target_pw_remaining == "") {
           window.state = 'broken';
         }
       } else if ($scope.i_am_killable) {
+        $scope.hack_btn = "img/hack_btn_ready.png"
         // Display kill button
         // When the button is clicked, execute kill_user on THAT PHONE's user as the target, and OUR PHONE's user as the user_id
         // TODO AIDEN show the kill screen
@@ -60,6 +63,7 @@ angular.module('assassin.controllers', [])
           // TODO show that the user has been killed
         });
       } else if (window.app_state == 'broken') {
+        $scope.hack_btn = "img/hack_btn_ready.png"
         // Go in for the kill
         enableKillBetween($rootScope.auth.user.id, $scope.target.id);
       }
