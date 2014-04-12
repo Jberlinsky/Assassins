@@ -1,0 +1,19 @@
+<ion-view title="Going in for the Kill">
+  <ion-content>
+    <div class="list card">
+      <h2>Steal the key?</h2>
+      <div class="row">
+	<div class="col"> 
+	  <div align="center">
+	    <button id="kill_button" style="text-align:center" class="button button-balanced">Yes</button>
+	  </div>
+	</div>
+	<div class="col">
+	  <div align="center">
+	    <button style="text-align:center" class="button button-assertive">No</button>
+	  </div>
+	</div>
+      </div>
+      </div>
+  </ion-content>
+</ion-view>

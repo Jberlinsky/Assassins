@@ -114,15 +114,15 @@ function targetInRange(geolocation_obj, target) {
   var error_tolerance = .05;
   var lat_diff = Math.abs(geolocation_obj.coords.latitude  - target.geo_lat);
   var lng_diff = Math.abs(geolocation_obj.coords.longitude - target.geo_lng);
-  
-  if ((lat_diff / geolocation_obj.coords.latitude < error_tolerance) &&
-     (lng_diff / geolocation_obj.coords.longitude < error_tolerance) &&
-     (lat_diff >= geolocation_obj.coords.accuracy) &&
-     (lng_diff >= geolocation_obj.coords.accuracy)) {
-      return true;
-     } else {
-      return false;
-     }
+  if (
+    (lat_diff / geolocation_obj.coords.latitude) < error_tolerance &&
+    (lng_diff / geolocation_obj.coords.latitude) < error_tolerance &&
+    (lat_diff >= geolocation_obj.coords.accuracy) &&
+    (lng_diff >= geolocation_obj.coords.accuracy)) {
+    return true;
+  } else {
+    return false;
+  }
 }
 
 function targetCanBeDecrypted(target) {
@@ -161,7 +161,7 @@ function guessPw(target_id, guess){
 }
 
 function self_kill(target_id){
-  users.once('value', function(snapshot)){
+  users.once('value', function(snapshot){
     usersObj = snapshot.val();
     for(key in usersObj){
       if(usersObj[key].target == target_id){

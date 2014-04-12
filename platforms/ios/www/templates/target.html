@@ -2,27 +2,26 @@
   <ion-content class="has-header padding">
     <div class="list card">
       <div class="item item-divider">
-	John Doe
       </div>
       <div class="item item-body">
-	<img class="full-image" src="http://placehold.it/300x200">
+	<img ng-if="target" class="full-image" ng-src="{{fbURL}}">
       </div>
       <div class="item item-text-wrap">
 	<label class="item item-input">
 	  <span clas="input-label">Cracked:</span>
-	  <input type="text">
+	  <input type="text" value="{{cracked_letters}}" readonly>
 	</label>
       </div>
       <div class="item item-text-wrap">
 	<div class="row">
-	  <div class="col"> 
+	  <div class="col">
 	    <div align="center">
-	      <button style="text-align:center" class="button button-balanced">Hack</button>
+        <img ng-src="{{hack_btn}}">
 	    </div>
 	  </div>
 	  <div class="col">
 	    <div align="center">
-	      <button style="text-align:center" class="button button-assertive">Defn</button>
+	      <img src="img/def_btn_base.png"
 	    </div>
 	  </div>
 	</div>

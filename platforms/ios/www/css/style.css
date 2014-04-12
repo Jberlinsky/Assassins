@@ -1,1 +1,22 @@
 /* Empty. Add your own CSS if you like */
+
+.profContainer{
+	width: 250px
+}
+
+.profPicContainer {
+	width:250px;
+	height:250px;
+	overflow: hidden;
+	background-color: blue;
+}
+
+.profPic {
+	height: 250px;
+	width: auto;
+}
+
+.center {
+	margin-left: auto;
+	margin-right: auto;
+}
