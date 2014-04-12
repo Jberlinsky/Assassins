@@ -197,13 +197,6 @@ module.exports = [
         ]
     },
     {
-        "file": "plugins/com.phonegap.plugins.barcodescanner/www/barcodescanner.js",
-        "id": "com.phonegap.plugins.barcodescanner.BarcodeScanner",
-        "clobbers": [
-            "cordova.plugins.barcodeScanner"
-        ]
-    },
-    {
         "file": "plugins/org.apache.cordova.file/www/DirectoryEntry.js",
         "id": "org.apache.cordova.file.DirectoryEntry",
         "clobbers": [
@@ -354,7 +347,7 @@ module.exports.metadata =
     "org.apache.cordova.media": "0.2.9",
     "org.apache.cordova.dialogs": "0.2.6",
     "org.apache.cordova.vibration": "0.3.7",
-    "com.phonegap.plugins.barcodescanner": "1.0.1",
+    "com.mirasense.scanditsdk.plugin": "1.1.0",
     "org.apache.cordova.file": "1.0.1"
 }
 // BOTTOM OF METADATA

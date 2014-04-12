@@ -56,17 +56,21 @@ angular.module('assassin.controllers', [])
         }
       } else if (window.app_state == 'broken') {
         // Go in for the kill
-        cordova.plugins.barcodeScanner.scan(function (result) {
-          var scanned_result = result.text;
+        cordova.exec(function(resultArray) {
+          alert('Scanned ' + resultArray[0] + '; code: ' + resultArray[1]);
+          var scanned_result = resultArray[1];
           if (scanned_result == $scope.target.id) {
             // We just killed our target
             killUser($scope.target.id, $rootScope.auth.user.id);
             alert("You have killed " + $scope.target.name + "!");
           }
-        },
-        function (error) {
-            alert("Scanning failed: " + error);
-        });
+        }, function(error) {
+          alert('Failed: ' + error);
+        }, "ScanditSDK", "scan", ["HggvAsIzEeOGJ8PCmN4hrqbSYHs/MOiC7BROdp1pui", {
+          'beep': true,
+          '1DScanning': true,
+          '2DScanning': true
+        }]);
       }
     });
   };

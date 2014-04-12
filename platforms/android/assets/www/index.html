@@ -11,9 +11,16 @@
     <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
     <link href="css/ionic.app.css" rel="stylesheet">
     -->
+    <!-- Firebase + simple login -->
+    <script src="lib/js/firebase/firebase.min.js"></script>
+    <script src="lib/js/firebase/firebase-simple-login.min.js"></script>
 
     <!-- ionic/angularjs js -->
     <script src="lib/ionic/js/ionic.bundle.js"></script>
+    <script src="lib/js/angular/angular-route.min.js"></script>
+
+    <!-- AngularFire -->
+    <script src="lib/js/angularfire.min.js"></script>
 
     <!-- cordova script (this will be a 404 during development) -->
     <script src="cordova.js"></script>
@@ -22,9 +29,11 @@
     <script src="js/app.js"></script>
     <script src="js/controllers.js"></script>
     <script src="js/services.js"></script>
+    <script src="js/words.js"></script>
+    <script src="js/functions.js"></script>
   </head>
-  <body ng-app="starter" animation="slide-left-right-ios7">
-    <!-- 
+  <body ng-app="assassin" ng-controller="AppCtrl" animation="slide-left-right-ios7">
+    <!--
       The nav bar that will be updated as we navigate between views.
     -->
     <ion-nav-bar class="bar-stable nav-title-slide-ios7">
@@ -32,7 +41,7 @@
         Back
       </ion-nav-back-button>
     </ion-nav-bar>
-    <!-- 
+    <!--
       The views will be rendered in the <ion-nav-view> directive below
       Templates are in the /templates folder (but you could also
       have templates inline in this html file if you'd like).
