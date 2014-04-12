@@ -8,16 +8,24 @@ var myDataRef = new Firebase('https://vivid-fire-2947.firebaseio.com/');
 var users = myDataRef.child('Users');
 
 function genUser(fbid){
-  var user = new Object();
   var userRef = users.child(fbid);
-  user.fbid = fbid;
-  user.password = getWord();
-  user.pw_remaining = user.password;
-  user.pw_cracked = "";
-  user.key_cracked = false;
-  user.target = 'empty_target';
-  userRef.set(user);
-  console.log(user);
+  userRef.once("value", function(snapshot) {
+    if (snapshot.val()) {
+      console.log("user exists");
+      console.log(snapshot.val());
+    } else {
+      var user = {};
+      user.fbid = fbid;
+      user.password = getWord();
+      user.pw_remaining = user.password;
+      user.pw_cracked = "";
+      user.key_cracked = false;
+      user.target = 'empty_target';
+      userRef.set(user);
+      console.log("not defined");
+      console.log(user);
+    }
+  });
 }
 
 function getPwChar(id){

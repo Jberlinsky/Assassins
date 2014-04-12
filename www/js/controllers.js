@@ -21,12 +21,6 @@ angular.module('assassin.controllers', [])
   $rootScope.$on('$firebaseSimpleLogin:login', _login);
   $rootScope.$on('$firebaseSimpleLogin:logout', _logout);
   $rootScope.$on('$firebaseSimpleLogin:error', _error);
-
-  navigator.geolocation.watchPosition(function(position) {
-    if ($rootScope.auth && $rootScope.auth.user && $rootScope.auth.user.id) {
-      updateLocation($rootScope.auth.user.id, position);
-    }
-  });
 })
 
 .controller('TargetCtrl', function($scope, $firebase, $rootScope) {
@@ -34,13 +28,19 @@ angular.module('assassin.controllers', [])
     getPwChar($rootScope.auth.user.id);
   };
 
-  navigator.geolocation.watchPosition(function(position) {
-    if ($rootScope.auth && $rootScope.auth.user && $rootScope.auth.user.id) {
+  if ($rootScope.auth && $rootScope.auth.user) {
+    navigator.geolocation.watchPosition(function(position) {
+      $scope.target = $firebase($rootScope.assassin.child('target'));
+      $scope.coords = position.coords;
+      console.log($scope.target);
+      console.log(position);
+    $scope.target_pw_cracked = $scope.target.pw_cracked;
+    $scope.target_pw_remaining = $scope.target.pw_remaining;
       updateLocation($rootScope.auth.user.id, position);
       if (window.app_state === undefined) { window.app_state = 'seeking'; }
       if (window.app_state == 'seeking') {
         // Look for nearby users to decrypt
-        debugger;
+        //debugger;
         findUserInRange($rootScope.auth.user.id, function(target) {
           if (target.id == $scope.target.id) {
             // Start decrypting
@@ -68,13 +68,8 @@ angular.module('assassin.controllers', [])
             alert("Scanning failed: " + error);
         });
       }
-    }
-  });
-  //debugger;
-  // ------ This binds the "wattup" scope item to an item in firebase --------
-  $scope.target = $firebase($rootScope.assassin.child('target'));
-  $scope.target_pw_cracked = $scope.target.pw_cracked;
-  $scope.target_pw_remaining = $scope.target.pw_remaining;
+    });
+  };
 })
 
 .controller('ProfileCtrl', function($scope) {
